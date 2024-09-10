@@ -1,5 +1,4 @@
 <template>
-  <header class="mt-2">
     <div class="container desktop">
       <div class="row">
         <div class="col-lg-2 col-sm-2">
@@ -54,7 +53,6 @@
         <button type="button" class="city-button"><i class="bi bi-geo-alt ms-1"></i>Kyiv</button>
       </div>
     </div>
-  </header>
 </template>
 
 <script>
@@ -70,18 +68,23 @@ export default {
 </script>
 
 <style scoped>
+.topnav {
+  background: rgba(255,255,255, 0.1);
+}
  .mobile-view.menu {
     position: fixed;
     height: 100vh;
     width: 100vw;
     background-color: white;
-    z-index: 1050;
     opacity: 0;
     transition: opacity 0.3s ease;
+    visibility: hidden;
   }
 
   .mobile-view.menu.open {
     opacity: 1;
+    z-index: 1050;
+    visibility: visible;
   }
 
   .mobile .nav-link {
@@ -96,12 +99,11 @@ export default {
     font-weight: 600;
     font-size: 48px;
     text-decoration: none;
-    color: #39f;
   }
 
   .topnav__logo > a {
     text-decoration: none;
-    color: #39f;
+    color: #053672;
   }
 
   .topnav__contact-item {
@@ -166,6 +168,20 @@ export default {
  }
  .social-icon:hover {
    transform: rotate(30deg);
-   color: #39f;
+ }
+
+ .bi-instagram:hover {
+   color: #bd6060;
+ }
+ .bi-whatsapp:hover {
+   color: #25a125;
+ }
+
+ .bi-facebook:hover {
+   color: #053672;
+ }
+
+ .bi-youtube:hover {
+   color: darkred;
  }
 </style>

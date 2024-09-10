@@ -1,5 +1,5 @@
 <template>
-  <div class="container mt-3">
+  <div class="container mt-sm-3 mt-lg-0 search">
     <div class="row">
       <div class="col-lg-12">
         <div class="input-group">
@@ -18,5 +18,4 @@ export default {
 </script>
 
 <style scoped>
-
 </style>

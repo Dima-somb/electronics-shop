@@ -1,7 +1,12 @@
 <template>
+  <header class="mt-2">
   <top-nav-menu></top-nav-menu>
   <top-search></top-search>
-  <home-page></home-page>
+  </header>
+
+  <div class="main">
+    <home-page></home-page>
+  </div>
 </template>
 
 <script>
@@ -17,5 +22,4 @@ export default {
 </script>
 
 <style>
-
 </style>
