@@ -1,10 +1,12 @@
 <template>
-    <h1>Home page</h1>
+  <app-carousel></app-carousel>
 </template>
 
 <script>
+import AppCarousel from "@/components/carousel";
 export default {
-  name: "home-page"
+  name: "home-page",
+  components: {AppCarousel}
 }
 </script>
 
