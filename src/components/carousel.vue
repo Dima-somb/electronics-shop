@@ -62,11 +62,6 @@ export default {
 </script>
 
 <style scoped>
-/*.carousel {*/
-/*  position: absolute;*/
-/*  top: 0;*/
-/*  margin-bottom: 576px;*/
-/*}*/
 .slide {
   position: relative;
   min-width: 100vw;
@@ -97,8 +92,9 @@ export default {
 .slide__content {
   color: white;
   position: absolute;
-  bottom: 220px;
+  bottom: 100px;
   left: 180px;
+  max-width: 500px;
 }
 
 @media (max-width: 768px) {
