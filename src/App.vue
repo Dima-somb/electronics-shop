@@ -3,7 +3,6 @@
   <top-nav-menu></top-nav-menu>
   <top-search></top-search>
   </header>
-
   <div class="main">
     <home-page></home-page>
   </div>
@@ -22,4 +21,5 @@ export default {
 </script>
 
 <style>
+
 </style>

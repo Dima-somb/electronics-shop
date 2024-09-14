@@ -1,5 +1,5 @@
 <template>
-  <div class="container categories-section">
+  <div class="container categories-section mt-3">
     <div class="d-flex flex-wrap justify-content-sm-center justify-content-lg-between">
       <div class="card mb-3 mx-lg-0 mx-md-3">
         <a href="https://example.com" class="card-link">
@@ -53,6 +53,11 @@
         </a>
       </div>
     </div>
+    <div class="d-flex justify-content-center">
+      <div class="">
+        <button type="button" class="btn btn-lg btn btn-outline-primary all-categories">Усі категорії</button>
+      </div>
+    </div>
   </div>
 </template>
 
@@ -67,6 +72,10 @@ export default {
   transition: all 0.5s;
   min-width: 18rem;
 }
+
+/*.all-categories {*/
+/*  background: #2c80e5;*/
+/*}*/
 @media (max-width: 768px) {
   .card {
     min-width: 100%

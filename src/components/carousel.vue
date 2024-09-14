@@ -62,15 +62,15 @@ export default {
 </script>
 
 <style scoped>
-.carousel {
-  position: absolute;
-  top: 0;
-  z-index: -1;
-}
+/*.carousel {*/
+/*  position: absolute;*/
+/*  top: 0;*/
+/*  margin-bottom: 576px;*/
+/*}*/
 .slide {
   position: relative;
   min-width: 100vw;
-  min-height: 700px;
+  min-height: 604px;
   background-size: cover;
   background-position: center;
 }
