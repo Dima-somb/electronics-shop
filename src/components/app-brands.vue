@@ -1,6 +1,6 @@
 <template>
-  <div class="container categories-section">
-      <h2 class="my-lg-5 text-center brands__title">Обирай найкраще</h2>
+  <div class="container categories-section mb-5">
+      <h2 class="my-5 text-center brands__title">Обирай найкраще</h2>
     <div class="d-flex flex-wrap justify-content-sm-center justify-content-lg-between">
       <div class="card mb-3 mx-lg-0 mx-md-3">
         <a href="https://example.com" class="card-link">
