@@ -1,10 +1,17 @@
 <template>
   <div class="container cards-information mb-lg-5">
     <div class="d-flex flex-wrap justify-content-between">
-      <div class="mb-5" v-for="num in [1,2,3,4,5,6]" v-bind:key="num">
+      <div class="mb-5" v-for="(card, index) in cards" :key="index">
         <div class="card cards-information-block">
           <div class="card-body">
-            <img src="../assets/images/EcoFlow-RIVER-2-Pro-38-Picture-01-228x228.webp" class="card-img-top" alt="...">
+            <img
+                @mouseenter="card.hovered = true"
+                @mouseleave="card.hovered = false"
+                :src="card.hovered ? card.hoverImage : card.defaultImage"
+                class="card-img-top"
+                alt="Card image"
+            >
+
              <div class="cards-information__title">
                <a href="#">Зарядна станція EcoFlow RIVER 2 Pro</a>
              </div>
@@ -42,7 +49,47 @@
 
 <script>
 export default {
-  name: "app-cards-information"
+  name: "app-cards-information",
+  data() {
+    return {
+      cards: [
+        {
+          defaultImage: require('@/assets/images/EcoFlow-RIVER-2-Pro-38-Picture-01-228x228.webp'),
+          hoverImage: require('../assets/images/eco-flow-river-2.webp'),
+          hovered: false
+        },
+        {
+          defaultImage: require('@/assets/images/EcoFlow-RIVER-2-Pro-38-Picture-01-228x228.webp'),
+          hoverImage: require('../assets/images/eco-flow-river-2.webp'),
+          hovered: false
+        },
+        {
+          defaultImage: require('@/assets/images/EcoFlow-RIVER-2-Pro-38-Picture-01-228x228.webp'),
+          hoverImage: require('../assets/images/eco-flow-river-2.webp'),
+          hovered: false
+        },
+        {
+          defaultImage: require('@/assets/images/EcoFlow-RIVER-2-Pro-38-Picture-01-228x228.webp'),
+          hoverImage: require('../assets/images/eco-flow-river-2.webp'),
+          hovered: false
+        },
+        {
+          defaultImage: require('@/assets/images/EcoFlow-RIVER-2-Pro-38-Picture-01-228x228.webp'),
+          hoverImage: require('../assets/images/eco-flow-river-2.webp'),
+          hovered: false
+        },
+        {
+          defaultImage: require('@/assets/images/EcoFlow-RIVER-2-Pro-38-Picture-01-228x228.webp'),
+          hoverImage: require('../assets/images/eco-flow-river-2.webp'),
+          hovered: false
+        },
+      ]
+    }
+  },
+
+  computed: {
+
+  }
 }
 </script>
 
