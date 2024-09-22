@@ -1,11 +1,11 @@
 <template>
   <header class="mt-2">
-  <top-nav-menu></top-nav-menu>
-  <top-search></top-search>
+    <top-nav-menu></top-nav-menu>
+    <top-search></top-search>
+    <app-breadcrums></app-breadcrums>
   </header>
   <div class="main">
-<!--    <home-page></home-page>-->
-    <detail-page></detail-page>
+    <router-view></router-view>
   </div>
     <app-footer></app-footer>
 </template>
@@ -16,10 +16,12 @@
 import TopNavMenu from "@/components/top-nav-menu";
 import TopSearch from "@/components/top-search";
 import AppFooter from "@/components/app-footer";
-import DetailPage from "@/pages/detail-page";
+
+import AppBreadcrums from "@/components/breadcrums";
+
 export default {
   name: 'App',
-  components: {DetailPage, AppFooter, TopSearch, TopNavMenu},
+  components: {AppBreadcrums, AppFooter, TopSearch, TopNavMenu},
 }
 </script>
 

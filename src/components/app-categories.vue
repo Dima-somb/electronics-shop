@@ -1,56 +1,17 @@
 <template>
   <div class="container categories-section mt-3">
     <div class="d-flex flex-wrap justify-content-sm-center justify-content-lg-between">
-      <div class="card mb-3 mx-lg-0 mx-md-3">
-        <a href="https://example.com" class="card-link">
+      <div class="card mb-3 mx-lg-0 mx-md-3" v-for="(category, index) in categories" :key="index">
+        <router-link class="card-link" :to="{ name: 'Categories', params: { category: category.params }}">
           <div class="card-body">
             <div class="d-flex">
               <div class="categories-section__icon me-3">
-                <i class="bi bi-phone"></i>
+                <i class="bi bi-phone" :class="category.icon"></i>
               </div>
-              <div class="categories-section__text">Смартфони, <br> телефони</div>
-            </div>
-
-          </div>
-        </a>
-      </div>
-      <div class="card mb-3 mx-lg-0 mx-md-3" style="width: 18rem;">
-        <a href="https://example.com" class="card-link">
-          <div class="card-body">
-            <div class="d-flex">
-              <div class="categories-section__icon me-3">
-                <i class="bi bi-tv"></i>
-              </div>
-              <div class="categories-section__text">Телевізори</div>
-            </div>
-
-          </div>
-        </a>
-      </div>
-      <div class="card mb-3 mx-lg-0 mx-md-3" style="width: 18rem;">
-        <a href="https://example.com" class="card-link">
-          <div class="card-body">
-            <div class="d-flex">
-              <div class="categories-section__icon me-3">
-                <i class="bi bi-laptop"></i>
-              </div>
-              <div class="categories-section__text">Ноутбуки</div>
-            </div>
-
-          </div>
-        </a>
-      </div>
-      <div class="card mb-3 mx-lg-0 mx-md-3" style="width: 18rem;">
-        <a href="https://example.com" class="card-link">
-          <div class="card-body">
-            <div class="d-flex">
-              <div class="categories-section__icon me-3">
-                <i class="bi bi-battery-charging"></i>
-              </div>
-              <div class="categories-section__text">Електроживлення</div>
+              <div class="categories-section__text" v-html="category.title"></div>
             </div>
           </div>
-        </a>
+        </router-link>
       </div>
     </div>
     <div class="d-flex justify-content-center">
@@ -59,11 +20,23 @@
       </div>
     </div>
   </div>
+
+  <router-view></router-view>
 </template>
 
 <script>
 export default {
-  name: "app-categories"
+  name: "app-categories",
+  data() {
+    return {
+      categories: [
+        {title: 'Смартфони, <br> телефони', params: 'smartphones', icon: 'bi-phone'},
+        {title: 'Телевізор', params: 'televisions', icon: 'bi-tv'},
+        {title: 'Ноутбуки', params: 'laptops', icon: 'bi-laptop'},
+        {title: 'Електроживлення', params: 'power-supplies', icon: 'bi-battery-charging'},
+      ]
+    }
+  }
 }
 </script>
 
