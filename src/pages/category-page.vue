@@ -19,6 +19,14 @@ export default {
           return 'Ноутбуки';
         case 'power-supplies':
           return 'Електроживлення';
+        case 'xiaomi':
+          return 'Xiaomi';
+        case 'samsung':
+          return 'Samsung';
+        case 'baseus':
+          return 'Baseus';
+        case 'dyson':
+          return 'Dyson';
         default:
           return 'Невідома категорія';
       }
