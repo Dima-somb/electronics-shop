@@ -10,7 +10,8 @@
           "category": "Смартфони",
           "name": "Samsung Galaxy S23",
           "price": 800,
-          "rate": 3
+          "rate": 3,
+          "cashback": 130
         },
         {
           "id": 2,
@@ -18,6 +19,7 @@
           "name": "Samsung QLED TV",
           "price": 1200,
           "rate": 4,
+          "cashback": 130,
           "features": [
             "4K",
             "HDR"
@@ -29,6 +31,7 @@
           "name": "Samsung Galaxy Book",
           "price": 1500,
           "rate": 1,
+          "cashback": 130,
           "features": [
             "Intel i7",
             "16GB RAM"
@@ -40,6 +43,7 @@
           "name": "Samsung Power Bank",
           "price": 50,
           "rate": 3,
+          "cashback": 130,
           "features": [
             "10000mAh"
           ]
@@ -56,7 +60,8 @@
           "brand": "Xiaomi",
           "name": "Смартфон Xiaomi Redmi Note 13 8/256GB Midnight Black (Global)",
           "price": 7999,
-          "rate": 3,
+          "rate": 5,
+          "cashback": 130,
           "imageUrl": "../assets/images/brands/xiaomi/smartphones/Xiaomi-Redmi-Note-13-6128GB-60-Midnight-Black-01-228x228.webp"
         },
         {
@@ -65,6 +70,7 @@
           "name": "Смартфон Xiaomi Poco M5s 6/128GB Gray (Global)",
           "price": 5399,
           "rate": 3,
+          "cashback": 130,
           "imageUrl": "../assets/images/brands/xiaomi/smartphones/Xiaomi-Poco-M5s-6128GB-38-Gray-01-228x228.webp"
         },
         {
@@ -73,6 +79,7 @@
           "name": "Смартфон Xiaomi Redmi Note 13 Pro 8/256GB Lavender Purple Global",
           "price": 9999,
           "rate": 3,
+          "cashback": 130,
           "imageUrl": "../assets/images/brands/xiaomi/smartphones/Xiaomi-Redmi-Note-13-Pro-8256GB-38-Lavender-Purple-01-228x228.webp"
         },
         {
@@ -81,6 +88,7 @@
           "name": "Смартфон Xiaomi Redmi 9A 4/64GB Gray CN",
           "price": 3449,
           "rate": 3,
+          "cashback": 130,
           "imageUrl": "../assets/images/brands/xiaomi/smartphones/Xiaomi-Redmi-9A-464GB-88-Gray-01-228x228.webp"
         },
         {
@@ -89,6 +97,7 @@
           "name": "Смартфон Xiaomi Redmi Note 13 Pro 8/256GB Forest Green Global",
           "price": 9999,
           "rate": 3,
+          "cashback": 130,
           "imageUrl": "../assets/images/brands/xiaomi/smartphones/Xiaomi-Redmi-Note-13-Pro-8256GB-13-Forest-Green-01-228x228.webp"
         },
         {
@@ -97,6 +106,7 @@
           "name": "Смартфон Xiaomi Redmi Note 13 6/128GB Midnight Black (Global)",
           "price": 6999,
           "rate": 3,
+          "cashback": 130,
           "imageUrl": "../assets/images/brands/xiaomi/smartphones/Xiaomi-Redmi-Note-13-6128GB-38-Midnight-Black-01-228x228.webp"
         },
         {
@@ -105,6 +115,7 @@
           "name": "Смартфон Xiaomi Poco M5s 4/128GB Gray (Global)",
           "price": 4849 ,
           "rate": 3,
+          "cashback": 130,
           "imageUrl": "../assets/images/brands/xiaomi/smartphones/Xiaomi-Poco-M5s-4128GB-38-Gray-01-228x228.webp"
         },
         {
@@ -113,6 +124,7 @@
           "name": "Смартфон Xiaomi POCO F6 12/512GB Black (Global)",
           "price": 18999,
           "rate": 3,
+          "cashback": 130,
           "imageUrl": "../assets/images/brands/xiaomi/smartphones/Xiaomi-POCO-F6-12512GB-27-Black-02-228x228.webp"
         },
         {
@@ -121,6 +133,7 @@
           "name": "Смартфон Xiaomi Redmi Note 12S 8/256GB Onyx Black (Global)",
           "price": 6849,
           "rate": 3,
+          "cashback": 130,
           "imageUrl": "../assets/images/brands/xiaomi/smartphones/Xiaomi-12S-8256GB-88-Onyx-Black-01-228x228.webp"
         },
         {
@@ -129,6 +142,7 @@
           "name": "Смартфон Xiaomi Redmi 13 8/256GB Midnight Black (Global)",
           "price": 7999,
           "rate": 3,
+          "cashback": 130,
           "imageUrl": "../assets/images/brands/xiaomi/smartphones/Xiaomi-Redmi-Note-13-8256GB-38-Midnight-Black-01-228x228.webp"
         },
         {
@@ -137,6 +151,7 @@
           "name": "Смартфон Xiaomi Poco X6 Pro 5G 12/512GB Gray (Global)",
           "price": 16999,
           "rate": 3,
+          "cashback": 130,
           "imageUrl": "../assets/images/brands/xiaomi/smartphones/Xiaomi-Poco-X6-Pro-5G-12512GB-48-Gray-01-228x228.webp"
         },
         {
@@ -145,6 +160,7 @@
           "name": "Смартфон Xiaomi Redmi Note 9 NFC 3/64GB Forest Green Global А- (БУ)",
           "price": 1799,
           "rate": 3,
+          "cashback": 130,
           "imageUrl": "Xiaomi-Redmi-Note-9-07-228x228.webp"
         },
 
@@ -154,6 +170,7 @@
           "name": "Смартфон Xiaomi Redmi Note 13 Pro Plus 8/256GB White Global",
           "price": 16999,
           "rate": 3,
+          "cashback": 130,
           "imageUrl": "../assets/images/brands/xiaomi/smartphones/Xiaomi-Redmi-Note-13-Pro-Plus-12512GB-32-White-01-228x228.webp"
         },
         {
@@ -162,6 +179,7 @@
           "name": "Смартфон Xiaomi Redmi Note 13 Pro Plus 8/256GB Midnight Black (Global)",
           "price": 16999,
           "rate": 3,
+          "cashback": 130,
           "imageUrl": "../assets/images/brands/xiaomi/smartphones/Xiaomi-Redmi-Note-13-Pro-12512GB-78-Midnight-Black-01-228x228.webp"
         },
         {
@@ -170,6 +188,7 @@
           "name": "Смартфон Xiaomi Redmi Note 13 Pro 5G 8/256GB Ocean Teal Global",
           "price": 16999,
           "rate": 3,
+          "cashback": 130,
           "imageUrl": "../assets/images/brands/xiaomi/smartphones/Xiaomi-Redmi-Note-13-Pro-5G-8256GB-13-Ocean-Teal-01-228x228.webp"
         },
         {
@@ -178,6 +197,7 @@
           "name": "Смартфон Xiaomi Redmi Note 13 Pro 5G 8/256GB Midnight Black (Global)",
           "price": 16999,
           "rate": 3,
+          "cashback": 130,
           "imageUrl": "../assets/images/brands/xiaomi/smartphones/Xiaomi-Redmi-Note-13-Pro-5G-8256GB-38-Midnight-Black-01-228x228.webp"
         },
         {
@@ -186,6 +206,7 @@
           "name": "Смартфон Xiaomi Redmi Note 13 Pro 12/512GB Forest Green (Global)",
           "price": 11349,
           "rate": 3,
+          "cashback": 130,
           "imageUrl": "../assets/images/brands/xiaomi/smartphones/Xiaomi-Redmi-Note-13-Pro-8256GB-13-Forest-Green-01-228x228"
         },
         {
@@ -194,6 +215,7 @@
           "name": "Смартфон Xiaomi Redmi Note 13 5G 8/256GB Graphite Black Global",
           "price": 16999,
           "rate": 3,
+          "cashback": 130,
           "imageUrl": "../assets/images/brands/xiaomi/smartphones/Xiaomi-Redmi-Note-13-5G-8256GB-Graphite-Black-01-228x228.webp"
         },
         {
@@ -202,6 +224,7 @@
           "name": "Смартфон Xiaomi Redmi Note 13 8/256GB Midnight Black (Global)",
           "price": 7999,
           "rate": 3,
+          "cashback": 130,
           "imageUrl": "../assets/images/brands/xiaomi/smartphones/Xiaomi-Redmi-Note-13-6128GB-60-Midnight-Black-01-228x228.webp"
         },
         {
@@ -210,6 +233,7 @@
           "name": "Смартфон Xiaomi Poco M5s 6/128GB Gray (Global)",
           "price": 5399,
           "rate": 3,
+          "cashback": 130,
           "imageUrl": "../assets/images/brands/xiaomi/smartphones/Xiaomi-Poco-M5s-6128GB-38-Gray-01-228x228.webp"
         },
         {
@@ -218,6 +242,7 @@
           "name": "Смартфон Xiaomi Redmi Note 13 Pro 8/256GB Lavender Purple Global",
           "price": 9999,
           "rate": 3,
+          "cashback": 130,
           "imageUrl": "../assets/images/brands/xiaomi/smartphones/Xiaomi-Redmi-Note-13-Pro-8256GB-38-Lavender-Purple-01-228x228.webp"
         },
         {
@@ -226,6 +251,7 @@
           "name": "Смартфон Xiaomi Redmi 9A 4/64GB Gray CN",
           "price": 3449,
           "rate": 3,
+          "cashback": 130,
           "imageUrl": "../assets/images/brands/xiaomi/smartphones/Xiaomi-Redmi-9A-464GB-88-Gray-01-228x228.webp"
         },
         {
@@ -234,6 +260,7 @@
           "name": "Смартфон Xiaomi Redmi Note 13 Pro 8/256GB Forest Green Global",
           "price": 9999,
           "rate": 3,
+          "cashback": 130,
           "imageUrl": "../assets/images/brands/xiaomi/smartphones/Xiaomi-Redmi-Note-13-Pro-8256GB-13-Forest-Green-01-228x228.webp"
         },
         {
@@ -242,6 +269,7 @@
           "name": "Смартфон Xiaomi Redmi Note 13 6/128GB Midnight Black (Global)",
           "price": 6999,
           "rate": 3,
+          "cashback": 130,
           "imageUrl": "../assets/images/brands/xiaomi/smartphones/Xiaomi-Redmi-Note-13-6128GB-38-Midnight-Black-01-228x228.webp"
         },
         {
@@ -250,6 +278,7 @@
           "name": "Смартфон Xiaomi Poco M5s 4/128GB Gray (Global)",
           "price": 4849 ,
           "rate": 3,
+          "cashback": 130,
           "imageUrl": "../assets/images/brands/xiaomi/smartphones/Xiaomi-Poco-M5s-4128GB-38-Gray-01-228x228.webp"
         },
         {
@@ -258,6 +287,7 @@
           "name": "Смартфон Xiaomi POCO F6 12/512GB Black (Global)",
           "price": 18999,
           "rate": 3,
+          "cashback": 130,
           "imageUrl": "../assets/images/brands/xiaomi/smartphones/Xiaomi-POCO-F6-12512GB-27-Black-02-228x228.webp"
         },
         {
@@ -266,6 +296,7 @@
           "name": "Смартфон Xiaomi Redmi Note 12S 8/256GB Onyx Black (Global)",
           "price": 6849,
           "rate": 3,
+          "cashback": 130,
           "imageUrl": "../assets/images/brands/xiaomi/smartphones/Xiaomi-12S-8256GB-88-Onyx-Black-01-228x228.webp"
         },
         {
@@ -274,6 +305,7 @@
           "name": "Смартфон Xiaomi Redmi 13 8/256GB Midnight Black (Global)",
           "price": 7999,
           "rate": 3,
+          "cashback": 130,
           "imageUrl": "../assets/images/brands/xiaomi/smartphones/Xiaomi-Redmi-Note-13-8256GB-38-Midnight-Black-01-228x228.webp"
         },
         {
@@ -282,6 +314,7 @@
           "name": "Смартфон Xiaomi Poco X6 Pro 5G 12/512GB Gray (Global)",
           "price": 16999,
           "rate": 3,
+          "cashback": 130,
           "imageUrl": "../assets/images/brands/xiaomi/smartphones/Xiaomi-Poco-X6-Pro-5G-12512GB-48-Gray-01-228x228.webp"
         },
         {
@@ -290,6 +323,7 @@
           "name": "Смартфон Xiaomi Redmi Note 9 NFC 3/64GB Forest Green Global А- (БУ)",
           "price": 1799,
           "rate": 3,
+          "cashback": 130,
           "imageUrl": "Xiaomi-Redmi-Note-9-07-228x228.webp"
         }
       ]
@@ -306,7 +340,8 @@
           "brand": "Samsung",
           "name": "Samsung Galaxy S23",
           "price": 800,
-          "rate": 3
+          "rate": 3,
+          "cashback": 130
         },
         {
           "id": 2,
@@ -314,6 +349,7 @@
           "name": "Смартфон Xiaomi Redmi Note 13 8/256GB Midnight Black (Global)",
           "price": 7999,
           "rate": 3,
+          "cashback": 130,
           "imageUrl": "../assets/images/brands/xiaomi/smartphones/Xiaomi-Redmi-Note-13-6128GB-60-Midnight-Black-01-228x228.webp"
         },
         {
@@ -322,6 +358,7 @@
           "name": "Смартфон Xiaomi Poco M5s 6/128GB Gray (Global)",
           "price": 5399,
           "rate": 3,
+          "cashback": 130,
           "imageUrl": "../assets/images/brands/xiaomi/smartphones/Xiaomi-Poco-M5s-6128GB-38-Gray-01-228x228.webp"
         },
         {
@@ -330,6 +367,7 @@
           "name": "Смартфон Xiaomi Redmi Note 13 Pro 8/256GB Lavender Purple Global",
           "price": 9999,
           "rate": 3,
+          "cashback": 130,
           "imageUrl": "../assets/images/brands/xiaomi/smartphones/Xiaomi-Redmi-Note-13-Pro-8256GB-38-Lavender-Purple-01-228x228.webp"
         },
         {
@@ -338,6 +376,7 @@
           "name": "Смартфон Xiaomi Redmi 9A 4/64GB Gray CN",
           "price": 3449,
           "rate": 3,
+          "cashback": 130,
           "imageUrl": "../assets/images/brands/xiaomi/smartphones/Xiaomi-Redmi-9A-464GB-88-Gray-01-228x228.webp"
         },
         {
@@ -346,6 +385,7 @@
           "name": "Смартфон Xiaomi Redmi Note 13 Pro 8/256GB Forest Green Global",
           "price": 9999,
           "rate": 3,
+          "cashback": 130,
           "imageUrl": "../assets/images/brands/xiaomi/smartphones/Xiaomi-Redmi-Note-13-Pro-8256GB-13-Forest-Green-01-228x228.webp"
         },
         {
@@ -354,6 +394,7 @@
           "name": "Смартфон Xiaomi Redmi Note 13 6/128GB Midnight Black (Global)",
           "price": 6999,
           "rate": 3,
+          "cashback": 130,
           "imageUrl": "../assets/images/brands/xiaomi/smartphones/Xiaomi-Redmi-Note-13-6128GB-38-Midnight-Black-01-228x228.webp"
         },
         {
@@ -362,6 +403,7 @@
           "name": "Смартфон Xiaomi Poco M5s 4/128GB Gray (Global)",
           "price": 4849 ,
           "rate": 3,
+          "cashback": 130,
           "imageUrl": "../assets/images/brands/xiaomi/smartphones/Xiaomi-Poco-M5s-4128GB-38-Gray-01-228x228.webp"
         },
         {
@@ -370,6 +412,7 @@
           "name": "Смартфон Xiaomi POCO F6 12/512GB Black (Global)",
           "price": 18999,
           "rate": 3,
+          "cashback": 130,
           "imageUrl": "../assets/images/brands/xiaomi/smartphones/Xiaomi-POCO-F6-12512GB-27-Black-02-228x228.webp"
         },
         {
@@ -378,6 +421,7 @@
           "name": "Смартфон Xiaomi Redmi Note 12S 8/256GB Onyx Black (Global)",
           "price": 6849,
           "rate": 3,
+          "cashback": 130,
           "imageUrl": "../assets/images/brands/xiaomi/smartphones/Xiaomi-12S-8256GB-88-Onyx-Black-01-228x228.webp"
         },
         {
@@ -386,6 +430,7 @@
           "name": "Смартфон Xiaomi Redmi 13 8/256GB Midnight Black (Global)",
           "price": 7999,
           "rate": 3,
+          "cashback": 130,
           "imageUrl": "../assets/images/brands/xiaomi/smartphones/Xiaomi-Redmi-Note-13-8256GB-38-Midnight-Black-01-228x228.webp"
         },
         {
@@ -394,6 +439,7 @@
           "name": "Смартфон Xiaomi Poco X6 Pro 5G 12/512GB Gray (Global)",
           "price": 16999,
           "rate": 3,
+          "cashback": 130,
           "imageUrl": "../assets/images/brands/xiaomi/smartphones/Xiaomi-Poco-X6-Pro-5G-12512GB-48-Gray-01-228x228.webp"
         },
         {
@@ -402,6 +448,7 @@
           "name": "Смартфон Xiaomi Redmi Note 9 NFC 3/64GB Forest Green Global А- (БУ)",
           "price": 1799,
           "rate": 3,
+          "cashback": 130,
           "imageUrl": "Xiaomi-Redmi-Note-9-07-228x228.webp"
         },
 
@@ -411,6 +458,7 @@
           "name": "Смартфон Xiaomi Redmi Note 13 Pro Plus 8/256GB White Global",
           "price": 16999,
           "rate": 3,
+          "cashback": 130,
           "imageUrl": "../assets/images/brands/xiaomi/smartphones/Xiaomi-Redmi-Note-13-Pro-Plus-12512GB-32-White-01-228x228.webp"
         },
         {
@@ -419,6 +467,7 @@
           "name": "Смартфон Xiaomi Redmi Note 13 Pro Plus 8/256GB Midnight Black (Global)",
           "price": 16999,
           "rate": 3,
+          "cashback": 130,
           "imageUrl": "../assets/images/brands/xiaomi/smartphones/Xiaomi-Redmi-Note-13-Pro-12512GB-78-Midnight-Black-01-228x228.webp"
         },
         {
@@ -427,6 +476,7 @@
           "name": "Смартфон Xiaomi Redmi Note 13 Pro 5G 8/256GB Ocean Teal Global",
           "price": 16999,
           "rate": 3,
+          "cashback": 130,
           "imageUrl": "../assets/images/brands/xiaomi/smartphones/Xiaomi-Redmi-Note-13-Pro-5G-8256GB-13-Ocean-Teal-01-228x228.webp"
         },
         {
@@ -435,6 +485,7 @@
           "name": "Смартфон Xiaomi Redmi Note 13 Pro 5G 8/256GB Midnight Black (Global)",
           "price": 16999,
           "rate": 3,
+          "cashback": 130,
           "imageUrl": "../assets/images/brands/xiaomi/smartphones/Xiaomi-Redmi-Note-13-Pro-5G-8256GB-38-Midnight-Black-01-228x228.webp"
         },
         {
@@ -443,6 +494,7 @@
           "name": "Смартфон Xiaomi Redmi Note 13 Pro 12/512GB Forest Green (Global)",
           "price": 11349,
           "rate": 3,
+          "cashback": 130,
           "imageUrl": "../assets/images/brands/xiaomi/smartphones/Xiaomi-Redmi-Note-13-Pro-8256GB-13-Forest-Green-01-228x228"
         },
         {
@@ -451,6 +503,7 @@
           "name": "Смартфон Xiaomi Redmi Note 13 5G 8/256GB Graphite Black Global",
           "price": 16999,
           "rate": 3,
+          "cashback": 130,
           "imageUrl": "../assets/images/brands/xiaomi/smartphones/Xiaomi-Redmi-Note-13-5G-8256GB-Graphite-Black-01-228x228.webp"
         },
         {
@@ -458,6 +511,7 @@
           "brand": "Samsung",
           "name": "Samsung Galaxy S23",
           "price": 800,
+          "cashback": 130,
           "rate": 3
         },
         {
@@ -466,6 +520,7 @@
           "name": "Смартфон Xiaomi Redmi Note 13 8/256GB Midnight Black (Global)",
           "price": 7999,
           "rate": 3,
+          "cashback": 130,
           "imageUrl": "../assets/images/brands/xiaomi/smartphones/Xiaomi-Redmi-Note-13-6128GB-60-Midnight-Black-01-228x228.webp"
         },
         {
@@ -474,6 +529,7 @@
           "name": "Смартфон Xiaomi Poco M5s 6/128GB Gray (Global)",
           "price": 5399,
           "rate": 3,
+          "cashback": 130,
           "imageUrl": "../assets/images/brands/xiaomi/smartphones/Xiaomi-Poco-M5s-6128GB-38-Gray-01-228x228.webp"
         },
         {
@@ -482,6 +538,7 @@
           "name": "Смартфон Xiaomi Redmi Note 13 Pro 8/256GB Lavender Purple Global",
           "price": 9999,
           "rate": 3,
+          "cashback": 130,
           "imageUrl": "../assets/images/brands/xiaomi/smartphones/Xiaomi-Redmi-Note-13-Pro-8256GB-38-Lavender-Purple-01-228x228.webp"
         },
         {
@@ -490,6 +547,7 @@
           "name": "Смартфон Xiaomi Redmi 9A 4/64GB Gray CN",
           "price": 3449,
           "rate": 3,
+          "cashback": 130,
           "imageUrl": "../assets/images/brands/xiaomi/smartphones/Xiaomi-Redmi-9A-464GB-88-Gray-01-228x228.webp"
         },
         {
@@ -498,6 +556,7 @@
           "name": "Смартфон Xiaomi Redmi Note 13 Pro 8/256GB Forest Green Global",
           "price": 9999,
           "rate": 3,
+          "cashback": 130,
           "imageUrl": "../assets/images/brands/xiaomi/smartphones/Xiaomi-Redmi-Note-13-Pro-8256GB-13-Forest-Green-01-228x228.webp"
         },
         {
@@ -506,6 +565,7 @@
           "name": "Смартфон Xiaomi Redmi Note 13 6/128GB Midnight Black (Global)",
           "price": 6999,
           "rate": 3,
+          "cashback": 130,
           "imageUrl": "../assets/images/brands/xiaomi/smartphones/Xiaomi-Redmi-Note-13-6128GB-38-Midnight-Black-01-228x228.webp"
         },
         {
@@ -514,6 +574,7 @@
           "name": "Смартфон Xiaomi Poco M5s 4/128GB Gray (Global)",
           "price": 4849 ,
           "rate": 3,
+          "cashback": 130,
           "imageUrl": "../assets/images/brands/xiaomi/smartphones/Xiaomi-Poco-M5s-4128GB-38-Gray-01-228x228.webp"
         },
         {
@@ -522,6 +583,7 @@
           "name": "Смартфон Xiaomi POCO F6 12/512GB Black (Global)",
           "price": 18999,
           "rate": 3,
+          "cashback": 130,
           "imageUrl": "../assets/images/brands/xiaomi/smartphones/Xiaomi-POCO-F6-12512GB-27-Black-02-228x228.webp"
         },
         {
@@ -530,6 +592,7 @@
           "name": "Смартфон Xiaomi Redmi Note 12S 8/256GB Onyx Black (Global)",
           "price": 6849,
           "rate": 3,
+          "cashback": 130,
           "imageUrl": "../assets/images/brands/xiaomi/smartphones/Xiaomi-12S-8256GB-88-Onyx-Black-01-228x228.webp"
         },
         {
@@ -538,6 +601,7 @@
           "name": "Смартфон Xiaomi Redmi 13 8/256GB Midnight Black (Global)",
           "price": 7999,
           "rate": 3,
+          "cashback": 130,
           "imageUrl": "../assets/images/brands/xiaomi/smartphones/Xiaomi-Redmi-Note-13-8256GB-38-Midnight-Black-01-228x228.webp"
         },
         {
@@ -546,6 +610,7 @@
           "name": "Смартфон Xiaomi Poco X6 Pro 5G 12/512GB Gray (Global)",
           "price": 16999,
           "rate": 3,
+          "cashback": 130,
           "imageUrl": "../assets/images/brands/xiaomi/smartphones/Xiaomi-Poco-X6-Pro-5G-12512GB-48-Gray-01-228x228.webp"
         },
         {
@@ -554,6 +619,7 @@
           "name": "Смартфон Xiaomi Redmi Note 9 NFC 3/64GB Forest Green Global А- (БУ)",
           "price": 1799,
           "rate": 3,
+          "cashback": 130,
           "imageUrl": "Xiaomi-Redmi-Note-9-07-228x228.webp"
         }
       ]
@@ -567,12 +633,14 @@
           "id": 2,
           "brand": "Samsung",
           "name": "Samsung QLED TV",
+          "cashback": 130,
           "price": 1200
         },
         {
           "id": 6,
           "brand": "LG",
           "name": "LG OLED TV",
+          "cashback": 130,
           "price": 1300
         }
       ]
@@ -586,12 +654,14 @@
           "id": 3,
           "brand": "Samsung",
           "name": "Samsung Galaxy Book",
+          "cashback": 130,
           "price": 1500
         },
         {
           "id": 7,
           "brand": "Dell",
           "name": "Dell XPS 13",
+          "cashback": 130,
           "price": 1600
         }
       ]
@@ -605,12 +675,14 @@
           "id": 4,
           "brand": "Samsung",
           "name": "Samsung Power Bank",
+          "cashback": 130,
           "price": 50
         },
         {
           "id": 8,
           "brand": "Anker",
           "name": "Anker PowerCore",
+          "cashback": 130,
           "price": 40
         }
       ]
