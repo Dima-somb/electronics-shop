@@ -18,7 +18,7 @@ export default {
   },
   computed: {
     categoryTitle() {
-      switch (this.prm) {
+      switch (this.$route.query.name) {
         case 'smartphones':
           return 'Смартфони';
         case 'televisions':

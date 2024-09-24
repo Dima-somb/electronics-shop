@@ -20,13 +20,43 @@ export default {
       if (this.$route.path !== '/') {
         crumbs.push({ name: 'Головна', path: '/' });
       }
-      const currentCategory = this.$route.params.category;
+      let currentCategory = '';
+
+      switch (this.$route.query.name) {
+        case 'smartphones':
+          currentCategory = 'Смартфони';
+          break;
+        case 'televisions':
+          currentCategory =  'Телевізори';
+          break;
+        case 'laptops':
+          currentCategory =  'Ноутбуки';
+          break;
+        case 'power-supplies':
+          currentCategory =  'Електроживлення';
+          break;
+        case 'xiaomi':
+          currentCategory =  'Xiaomi';
+          break;
+        case 'samsung':
+          currentCategory =  'Samsung';
+          break;
+        case 'baseus':
+          currentCategory =  'Baseus';
+          break;
+        case 'dyson':
+          currentCategory =  'Dyson';
+          break;
+        default:
+          currentCategory =  '';
+      }
+
       if (currentCategory) {
         crumbs.push({ name: currentCategory.charAt(0).toUpperCase() + currentCategory.slice(1), path: `/categories/${currentCategory}` });
       }
       return crumbs;
     }
-  }
+  },
 }
 </script>
 
