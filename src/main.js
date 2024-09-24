@@ -8,6 +8,7 @@ import HomePage from "@/pages/home-page";
 import {createRouter, createWebHistory} from "vue-router";
 import NotFoundPage from "@/pages/not-found-page";
 import CategoryPage from "@/pages/category-page";
+import axios from "axios";
 
 
 const routes = [
@@ -16,10 +17,10 @@ const routes = [
         component: HomePage,
     },
     {
-        path: '/categories/:category',
+        path: '/categories/:prm',
         component: CategoryPage,
         props: true,
-        name: 'Categories'
+        name: 'Electronic',
     },
 
     {
@@ -35,6 +36,8 @@ const router = createRouter({
     routes: routes,
     linkActiveClass: 'active'
 })
+
+axios.defaults.baseURL = 'http://localhost:3000';
 
 createApp(App)
     .use(router)

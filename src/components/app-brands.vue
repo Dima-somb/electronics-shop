@@ -3,7 +3,7 @@
       <h2 class="my-5 text-center brands__title">Обирай найкраще</h2>
     <div class="d-flex flex-wrap justify-content-sm-center justify-content-lg-between">
       <div class="card mb-3 mx-lg-0 mx-md-3" v-for="(brand, index) in brands" :key="index">
-        <router-link class="card-link" :to="{name: 'Categories', params: {category: brand.routerLink}}">
+        <router-link class="card-link" :to="{name: 'Electronic', params: {prm: brand.param}, query: {name: brand.brand}}">
           <div class="card-body">
             <div class="d-flex justify-content-center brands__image-wrapper">
                 <img class="brands__image" :src="brand.imgUrl" alt="">
@@ -21,10 +21,10 @@ export default {
   data() {
     return {
       brands: [
-        {imgUrl: require('../assets/images/xiaomiBrand.svg'), routerLink: 'xiaomi'},
-        {imgUrl: require('../assets/images/samsungBrand.svg'), routerLink: 'samsung'},
-        {imgUrl: require('../assets/images/dyson-logo.svg'), routerLink: 'dyson'},
-        {imgUrl: require('../assets/images/baseus-logo.svg'), routerLink: 'baseus'},
+        {imgUrl: require('../assets/images/xiaomiBrand.svg'), brand: 'xiaomi', param: 'brands'},
+        {imgUrl: require('../assets/images/samsungBrand.svg'), brand: 'samsung', param: 'brands'},
+        {imgUrl: require('../assets/images/dyson-logo.svg'), brand: 'dyson', param: 'brands'},
+        {imgUrl: require('../assets/images/baseus-logo.svg'), brand: 'baseus', param: 'brands'},
       ]
     }
   }

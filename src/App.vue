@@ -16,12 +16,22 @@
 import TopNavMenu from "@/components/top-nav-menu";
 import TopSearch from "@/components/top-search";
 import AppFooter from "@/components/app-footer";
-
 import AppBreadcrums from "@/components/breadcrums";
 
 export default {
   name: 'App',
   components: {AppBreadcrums, AppFooter, TopSearch, TopNavMenu},
+
+  data() {
+    return {
+
+    }
+  },
+
+  methods: {
+
+  },
+
 }
 </script>
 
