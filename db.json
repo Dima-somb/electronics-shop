@@ -634,7 +634,9 @@
           "brand": "Samsung",
           "name": "Samsung QLED TV",
           "cashback": 130,
-          "price": 1200
+          "price": 1200,
+          "rate": 3,
+          "imageUrl": ""
         },
         {
           "id": 6,

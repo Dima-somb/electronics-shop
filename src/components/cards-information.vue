@@ -9,8 +9,9 @@
                 @mouseleave="card.hovered = false"
                 class="card-img-top"
                 alt="Card image"
+                :src="card?.hovered ? card?.hoverImage : card?.defaultImage"
             >
-
+<pre>{{card.hovered ? card.hoverImage : card.defaultImage}}</pre>
              <div class="cards-information__title">
                <a href="#">{{card.title}}</a>
              </div>
@@ -29,7 +30,7 @@
             </div>
             <div class="d-flex justify-content-between">
               <div class="cards-information-block__cashback">
-                <span class="fw-bolder">{{card.cashback}} ₴</span>
+                <span class="fw-bold">КЕШБЕК {{card.cashback}} ₴</span>
               </div>
               <div class="cards-information-block__stars">
                 <i v-for="i in Math.floor(card.rate)" :key="i" class="bi bi-star-fill"></i>
@@ -50,7 +51,7 @@ export default {
     cardsData: {
       type: Array,
       required: true,
-      default: () => [] // Значення за замовчуванням — порожній масив
+      default: () => []
     }
   },
   data() {
@@ -91,14 +92,15 @@ export default {
   },
   mounted() {
     this.cards = this.cardsData.map((card) => {
+      console.log('card', card);
       return {
         title: card.name,
         link: card.link,
         price: card.price,
         rate: card.rate,
         cashback: card.cashback,
-        defaultImage: card.imageSrc,
-        hoverImage: card.imageSrc,
+        defaultImage: card.imageUrl,
+        hoverImage: card.imageUrl,
         hovered: false
       };
     });
