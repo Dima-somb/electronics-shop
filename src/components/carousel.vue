@@ -71,22 +71,22 @@ export default {
 }
 
 .slide-1 {
-  background-image: url('../assets/images/gross-camera.jpg');
+  background-image: url('../../public/assets/images/gross-camera.jpg');
 }
 .slide-2 {
-  background-image: url('../assets/images/airpods.jpg');
+  background-image: url('../../public/assets/images/airpods.jpg');
 }
 
 .slide-3 {
-  background-image: url('../assets/images/nature.jpg');
+  background-image: url('../../public/assets/images/nature.jpg');
 }
 
 .slide-4 {
-  background-image: url('../assets/images/pen-phone.jpg');
+  background-image: url('../../public/assets/images/pen-phone.jpg');
 }
 
 .slide-5 {
-  background-image: url('../assets/images/night-camera.jpg');
+  background-image: url('../../public/assets/images/night-camera.jpg');
 }
 
 .slide__content {

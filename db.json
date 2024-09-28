@@ -62,7 +62,9 @@
           "price": 7999,
           "rate": 5,
           "cashback": 130,
-          "imageUrl": "../assets/images/brands/xiaomi/smartphones/Xiaomi-Redmi-Note-13-6128GB-60-Midnight-Black-01-228x228.webp"
+          "imageUrl": "/brands/xiaomi/smartphones/Xiaomi-Redmi-Note-13-6128GB-60-Midnight-Black-01-228x228.webp",
+          "imageUrl1": "/brands/xiaomi/smartphones/Xiaomi-Redmi-Note-13-8256GB-38-Midnight-Black-02-228x228.webp",
+          "hovered": false
         },
         {
           "id": 3,
@@ -71,7 +73,8 @@
           "price": 5399,
           "rate": 3,
           "cashback": 130,
-          "imageUrl": "../assets/images/brands/xiaomi/smartphones/Xiaomi-Poco-M5s-6128GB-38-Gray-01-228x228.webp"
+          "imageUrl": "/brands/xiaomi/smartphones/Xiaomi-Poco-M5s-6128GB-38-Gray-01-228x228.webp",
+          "imageUrl1": "/brands/xiaomi/smartphones/Xiaomi-Poco-M5s-6128GB-38-Gray-02-228x228.webp"
         },
         {
           "id": 4,
@@ -80,7 +83,8 @@
           "price": 9999,
           "rate": 3,
           "cashback": 130,
-          "imageUrl": "../assets/images/brands/xiaomi/smartphones/Xiaomi-Redmi-Note-13-Pro-8256GB-38-Lavender-Purple-01-228x228.webp"
+          "imageUrl": "/brands/xiaomi/smartphones/Xiaomi-Redmi-Note-13-Pro-8256GB-38-Lavender-Purple-01-228x228.webp",
+          "imageUrl1": "/brands/xiaomi/smartphones/Xiaomi-Redmi-Note-13-Pro-8256GB-38-Lavender-Purple-02-228x228.webp"
         },
         {
           "id": 5,
@@ -89,7 +93,8 @@
           "price": 3449,
           "rate": 3,
           "cashback": 130,
-          "imageUrl": "../assets/images/brands/xiaomi/smartphones/Xiaomi-Redmi-9A-464GB-88-Gray-01-228x228.webp"
+          "imageUrl": "/brands/xiaomi/smartphones/Xiaomi-Redmi-9A-464GB-88-Gray-01-228x228.webp",
+          "imageUrl1": "/brands/xiaomi/smartphones/Xiaomi-Redmi-Note-13-Pro-8256GB-38-Lavender-Purple-02-228x228.webp"
         },
         {
           "id": 6,
@@ -98,7 +103,8 @@
           "price": 9999,
           "rate": 3,
           "cashback": 130,
-          "imageUrl": "../assets/images/brands/xiaomi/smartphones/Xiaomi-Redmi-Note-13-Pro-8256GB-13-Forest-Green-01-228x228.webp"
+          "imageUrl": "/brands/xiaomi/smartphones/Xiaomi-Redmi-Note-13-Pro-8256GB-13-Forest-Green-01-228x228.webp",
+          "imageUrl1": "/brands/xiaomi/smartphones/Xiaomi-Redmi-Note-13-Pro-8256GB-38-Lavender-Purple-02-228x228.webp"
         },
         {
           "id": 7,
@@ -107,7 +113,8 @@
           "price": 6999,
           "rate": 3,
           "cashback": 130,
-          "imageUrl": "../assets/images/brands/xiaomi/smartphones/Xiaomi-Redmi-Note-13-6128GB-38-Midnight-Black-01-228x228.webp"
+          "imageUrl": "/brands/xiaomi/smartphones/Xiaomi-Redmi-Note-13-6128GB-38-Midnight-Black-01-228x228.webp",
+          "imageUrl1": "/brands/xiaomi/smartphones/Xiaomi-Redmi-Note-13-6128GB-38-Midnight-Black-02-228x228.webp"
         },
         {
           "id": 8,
@@ -116,7 +123,8 @@
           "price": 4849 ,
           "rate": 3,
           "cashback": 130,
-          "imageUrl": "../assets/images/brands/xiaomi/smartphones/Xiaomi-Poco-M5s-4128GB-38-Gray-01-228x228.webp"
+          "imageUrl": "/brands/xiaomi/smartphones/Xiaomi-Poco-M5s-4128GB-38-Gray-01-228x228.webp",
+          "imageUrl1": "/brands/xiaomi/smartphones/Xiaomi-Poco-M5s-4128GB-38-Gray-02-228x228.webp"
         },
         {
           "id": 9,
@@ -125,7 +133,8 @@
           "price": 18999,
           "rate": 3,
           "cashback": 130,
-          "imageUrl": "../assets/images/brands/xiaomi/smartphones/Xiaomi-POCO-F6-12512GB-27-Black-02-228x228.webp"
+          "imageUrl": "/brands/xiaomi/smartphones/Xiaomi-Poco-M5s-4128GB-38-Gray-01-228x228.webp",
+          "imageUrl1": "/brands/xiaomi/smartphones/Xiaomi-Poco-M5s-4128GB-38-Gray-02-228x228.webp"
         },
         {
           "id": 10,
@@ -134,7 +143,8 @@
           "price": 6849,
           "rate": 3,
           "cashback": 130,
-          "imageUrl": "../assets/images/brands/xiaomi/smartphones/Xiaomi-12S-8256GB-88-Onyx-Black-01-228x228.webp"
+          "imageUrl": "/brands/xiaomi/smartphones/Xiaomi-12S-8256GB-88-Onyx-Black-01-228x228.webp",
+          "imageUrl1": "/brands/xiaomi/smartphones/Xiaomi-12S-8256GB-88-Onyx-Black-02-228x228.webp"
         },
         {
           "id": 11,
@@ -143,7 +153,8 @@
           "price": 7999,
           "rate": 3,
           "cashback": 130,
-          "imageUrl": "../assets/images/brands/xiaomi/smartphones/Xiaomi-Redmi-Note-13-8256GB-38-Midnight-Black-01-228x228.webp"
+          "imageUrl": "/brands/xiaomi/smartphones/Xiaomi-Redmi-Note-13-8256GB-38-Midnight-Black-01-228x228.webp",
+          "imageUrl1": "/brands/xiaomi/smartphones/Xiaomi-Redmi-Note-13-8256GB-38-Midnight-Black-02-228x228.webp"
         },
         {
           "id": 12,
@@ -152,7 +163,8 @@
           "price": 16999,
           "rate": 3,
           "cashback": 130,
-          "imageUrl": "../assets/images/brands/xiaomi/smartphones/Xiaomi-Poco-X6-Pro-5G-12512GB-48-Gray-01-228x228.webp"
+          "imageUrl": "/brands/xiaomi/smartphones/Xiaomi-Poco-X6-Pro-5G-12512GB-48-Gray-01-228x228.webp",
+          "imageUrl1": "/brands/xiaomi/smartphones/Xiaomi-Poco-X6-Pro-5G-12512GB-48-Gray-02-228x228.webp"
         },
         {
           "id": 13,
@@ -161,7 +173,8 @@
           "price": 1799,
           "rate": 3,
           "cashback": 130,
-          "imageUrl": "Xiaomi-Redmi-Note-9-07-228x228.webp"
+          "imageUrl": "/brands/xiaomi/smartphones/Xiaomi-Redmi-Note-9-07-228x228.webp",
+          "imageUrl1": "/brands/xiaomi/smartphones/Xiaomi-Redmi-9T-4128GB-Ocean-Green-01-228x228.webp"
         },
 
         {
@@ -171,7 +184,8 @@
           "price": 16999,
           "rate": 3,
           "cashback": 130,
-          "imageUrl": "../assets/images/brands/xiaomi/smartphones/Xiaomi-Redmi-Note-13-Pro-Plus-12512GB-32-White-01-228x228.webp"
+          "imageUrl": "/brands/xiaomi/smartphones/Xiaomi-Redmi-Note-13-Pro-Plus-12512GB-32-White-01-228x228.webp",
+          "imageUrl1": "/brands/xiaomi/smartphones/Xiaomi-Redmi-Note-13-Pro-Plus-12512GB-32-White-02-228x228.webp"
         },
         {
           "id": 15,
@@ -180,7 +194,8 @@
           "price": 16999,
           "rate": 3,
           "cashback": 130,
-          "imageUrl": "../assets/images/brands/xiaomi/smartphones/Xiaomi-Redmi-Note-13-Pro-12512GB-78-Midnight-Black-01-228x228.webp"
+          "imageUrl": "/brands/xiaomi/smartphones/Xiaomi-Redmi-Note-13-Pro-12512GB-78-Midnight-Black-01-228x228.webp",
+          "imageUrl1": "/brands/xiaomi/smartphones/Xiaomi-Redmi-Note-13-Pro-12512GB-78-Midnight-Black-02-228x228.webp"
         },
         {
           "id": 16,
@@ -189,7 +204,8 @@
           "price": 16999,
           "rate": 3,
           "cashback": 130,
-          "imageUrl": "../assets/images/brands/xiaomi/smartphones/Xiaomi-Redmi-Note-13-Pro-5G-8256GB-13-Ocean-Teal-01-228x228.webp"
+          "imageUrl": "/brands/xiaomi/smartphones/Xiaomi-Redmi-Note-13-Pro-5G-8256GB-13-Ocean-Teal-01-228x228.webp",
+          "imageUrl1": "/brands/xiaomi/smartphones/Xiaomi-Redmi-Note-13-Pro-5G-8256GB-13-Ocean-Teal-02-228x228.webp"
         },
         {
           "id": 17,
@@ -198,7 +214,8 @@
           "price": 16999,
           "rate": 3,
           "cashback": 130,
-          "imageUrl": "../assets/images/brands/xiaomi/smartphones/Xiaomi-Redmi-Note-13-Pro-5G-8256GB-38-Midnight-Black-01-228x228.webp"
+          "imageUrl": "/brands/xiaomi/smartphones/Xiaomi-Redmi-Note-13-Pro-5G-8256GB-38-Midnight-Black-01-228x228.webp",
+          "imageUrl1": "/brands/xiaomi/smartphones/Xiaomi-Redmi-Note-13-Pro-5G-8256GB-38-Midnight-Black-02-228x228.webp"
         },
         {
           "id": 18,
@@ -207,7 +224,8 @@
           "price": 11349,
           "rate": 3,
           "cashback": 130,
-          "imageUrl": "../assets/images/brands/xiaomi/smartphones/Xiaomi-Redmi-Note-13-Pro-8256GB-13-Forest-Green-01-228x228"
+          "imageUrl": "/brands/xiaomi/smartphones/Xiaomi-Redmi-Note-13-Pro-8256GB-13-Forest-Green-01-228x228.webp",
+          "imageUrl1": "/brands/xiaomi/smartphones/Xiaomi-Redmi-Note-13-Pro-8256GB-13-Forest-Green-02-228x228.webp"
         },
         {
           "id": 19,
@@ -216,7 +234,8 @@
           "price": 16999,
           "rate": 3,
           "cashback": 130,
-          "imageUrl": "../assets/images/brands/xiaomi/smartphones/Xiaomi-Redmi-Note-13-5G-8256GB-Graphite-Black-01-228x228.webp"
+          "imageUrl": "/brands/xiaomi/smartphones/Xiaomi-Redmi-Note-13-Pro-5G-8256GB-78-Midnight-Black-02-228x228.webp",
+          "imageUrl1": "/brands/xiaomi/smartphones/Xiaomi-Redmi-Note-13-5G-8256GB-Graphite-Black-02-228x228.webp"
         },
         {
           "id": 21,
@@ -225,7 +244,8 @@
           "price": 7999,
           "rate": 3,
           "cashback": 130,
-          "imageUrl": "../assets/images/brands/xiaomi/smartphones/Xiaomi-Redmi-Note-13-6128GB-60-Midnight-Black-01-228x228.webp"
+          "imageUrl": "/brands/xiaomi/smartphones/Xiaomi-Redmi-Note-13-6128GB-60-Midnight-Black-01-228x228.webp",
+          "imageUrl1": "/brands/xiaomi/smartphones/Xiaomi-Redmi-Note-13-6128GB-60-Midnight-Black-02-228x228.webp"
         },
         {
           "id": 22,
@@ -234,7 +254,8 @@
           "price": 5399,
           "rate": 3,
           "cashback": 130,
-          "imageUrl": "../assets/images/brands/xiaomi/smartphones/Xiaomi-Poco-M5s-6128GB-38-Gray-01-228x228.webp"
+          "imageUrl": "/brands/xiaomi/smartphones/Xiaomi-Poco-M5s-6128GB-38-Gray-01-228x228.webp",
+          "imageUrl1": "/brands/xiaomi/smartphones/Xiaomi-Poco-M5s-6128GB-38-Gray-02-228x228.webp"
         },
         {
           "id": 23,
@@ -243,7 +264,8 @@
           "price": 9999,
           "rate": 3,
           "cashback": 130,
-          "imageUrl": "../assets/images/brands/xiaomi/smartphones/Xiaomi-Redmi-Note-13-Pro-8256GB-38-Lavender-Purple-01-228x228.webp"
+          "imageUrl": "/brands/xiaomi/smartphones/Xiaomi-Redmi-Note-13-Pro-8256GB-38-Lavender-Purple-01-228x228.webp",
+          "imageUrl1": "/brands/xiaomi/smartphones/Xiaomi-Redmi-Note-13-Pro-8256GB-38-Lavender-Purple-02-228x228.webp"
         },
         {
           "id": 24,
@@ -252,7 +274,8 @@
           "price": 3449,
           "rate": 3,
           "cashback": 130,
-          "imageUrl": "../assets/images/brands/xiaomi/smartphones/Xiaomi-Redmi-9A-464GB-88-Gray-01-228x228.webp"
+          "imageUrl": "/brands/xiaomi/smartphones/Xiaomi-Redmi-9A-464GB-88-Gray-01-228x228.webp",
+          "imageUrl1": "/brands/xiaomi/smartphones/Xiaomi-Redmi-9A-464GB-88-Gray-02-228x228.webp"
         },
         {
           "id": 25,
@@ -261,7 +284,8 @@
           "price": 9999,
           "rate": 3,
           "cashback": 130,
-          "imageUrl": "../assets/images/brands/xiaomi/smartphones/Xiaomi-Redmi-Note-13-Pro-8256GB-13-Forest-Green-01-228x228.webp"
+          "imageUrl": "/brands/xiaomi/smartphones/Xiaomi-Redmi-Note-13-Pro-8256GB-13-Forest-Green-01-228x228.webp",
+          "imageUrl1": "/brands/xiaomi/smartphones/Xiaomi-Redmi-Note-13-Pro-8256GB-13-Forest-Green-02-228x228.webp"
         },
         {
           "id": 26,
@@ -270,7 +294,8 @@
           "price": 6999,
           "rate": 3,
           "cashback": 130,
-          "imageUrl": "../assets/images/brands/xiaomi/smartphones/Xiaomi-Redmi-Note-13-6128GB-38-Midnight-Black-01-228x228.webp"
+          "imageUrl": "/brands/xiaomi/smartphones/Xiaomi-Redmi-Note-13-6128GB-38-Midnight-Black-01-228x228.webp",
+          "imageUrl1": "/brands/xiaomi/smartphones/Xiaomi-Redmi-Note-13-6128GB-38-Midnight-Black-02-228x228.webp"
         },
         {
           "id": 27,
@@ -279,7 +304,8 @@
           "price": 4849 ,
           "rate": 3,
           "cashback": 130,
-          "imageUrl": "../assets/images/brands/xiaomi/smartphones/Xiaomi-Poco-M5s-4128GB-38-Gray-01-228x228.webp"
+          "imageUrl": "/brands/xiaomi/smartphones/Xiaomi-Poco-M5s-4128GB-38-Gray-01-228x228.webp",
+          "imageUrl1": "/brands/xiaomi/smartphones/Xiaomi-Poco-M5s-4128GB-38-Gray-02-228x228.webp"
         },
         {
           "id": 28,
@@ -288,7 +314,8 @@
           "price": 18999,
           "rate": 3,
           "cashback": 130,
-          "imageUrl": "../assets/images/brands/xiaomi/smartphones/Xiaomi-POCO-F6-12512GB-27-Black-02-228x228.webp"
+          "imageUrl": "/brands/xiaomi/smartphones/Xiaomi-Redmi-13-8256GB-06-Midnight-Black-02-228x228.webp",
+          "imageUrl1": "/brands/xiaomi/smartphones/Xiaomi-POCO-F6-12512GB-27-Black-02-228x228.webp"
         },
         {
           "id": 29,
@@ -297,7 +324,8 @@
           "price": 6849,
           "rate": 3,
           "cashback": 130,
-          "imageUrl": "../assets/images/brands/xiaomi/smartphones/Xiaomi-12S-8256GB-88-Onyx-Black-01-228x228.webp"
+          "imageUrl": "/brands/xiaomi/smartphones/Xiaomi-12S-8256GB-88-Onyx-Black-01-228x228.webp",
+          "imageUrl1": "/brands/xiaomi/smartphones/Xiaomi-12S-8256GB-88-Onyx-Black-02-228x228.webp"
         },
         {
           "id": 30,
@@ -306,7 +334,8 @@
           "price": 7999,
           "rate": 3,
           "cashback": 130,
-          "imageUrl": "../assets/images/brands/xiaomi/smartphones/Xiaomi-Redmi-Note-13-8256GB-38-Midnight-Black-01-228x228.webp"
+          "imageUrl": "/brands/xiaomi/smartphones/Xiaomi-Redmi-Note-13-8256GB-38-Midnight-Black-01-228x228.webp",
+          "imageUrl1": "/brands/xiaomi/smartphones/Xiaomi-Redmi-Note-13-8256GB-38-Midnight-Black-02-228x228.webp"
         },
         {
           "id": 31,
@@ -315,7 +344,8 @@
           "price": 16999,
           "rate": 3,
           "cashback": 130,
-          "imageUrl": "../assets/images/brands/xiaomi/smartphones/Xiaomi-Poco-X6-Pro-5G-12512GB-48-Gray-01-228x228.webp"
+          "imageUrl": "/brands/xiaomi/smartphones/Xiaomi-Poco-X6-Pro-5G-12512GB-48-Gray-01-228x228.webp",
+          "imageUrl1": "/brands/xiaomi/smartphones/Xiaomi-Poco-X6-Pro-5G-12512GB-48-Gray-02-228x228.webp"
         },
         {
           "id": 32,
@@ -324,7 +354,8 @@
           "price": 1799,
           "rate": 3,
           "cashback": 130,
-          "imageUrl": "Xiaomi-Redmi-Note-9-07-228x228.webp"
+          "imageUrl": "/brands/xiaomi/smartphones/Xiaomi-Redmi-Note-9-07-228x228.webp",
+          "imageUrl1": "/brands/xiaomi/smartphones/Xiaomi-Redmi-9T-4128GB-Ocean-Green-01-228x228.webp"
         }
       ]
     }
@@ -620,7 +651,9 @@
           "price": 1799,
           "rate": 3,
           "cashback": 130,
-          "imageUrl": "Xiaomi-Redmi-Note-9-07-228x228.webp"
+          "imageUrl": "Xiaomi-Redmi-Note-9-07-228x228.webp",
+          "imageUrl1": "/brands/xiaomi/smartphones/Xiaomi-Redmi-9T-4128GB-Ocean-Green-01-228x228.webp"
+
         }
       ]
     },

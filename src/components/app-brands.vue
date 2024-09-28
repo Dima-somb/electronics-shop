@@ -21,10 +21,10 @@ export default {
   data() {
     return {
       brands: [
-        {imgUrl: require('../assets/images/xiaomiBrand.svg'), brand: 'xiaomi', param: 'brands'},
-        {imgUrl: require('../assets/images/samsungBrand.svg'), brand: 'samsung', param: 'brands'},
-        {imgUrl: require('../assets/images/dyson-logo.svg'), brand: 'dyson', param: 'brands'},
-        {imgUrl: require('../assets/images/baseus-logo.svg'), brand: 'baseus', param: 'brands'},
+        {imgUrl: require('../../public/assets/images/xiaomiBrand.svg'), brand: 'xiaomi', param: 'brands'},
+        {imgUrl: require('../../public/assets/images/samsungBrand.svg'), brand: 'samsung', param: 'brands'},
+        {imgUrl: require('../../public/assets/images/dyson-logo.svg'), brand: 'dyson', param: 'brands'},
+        {imgUrl: require('../../public/assets/images/baseus-logo.svg'), brand: 'baseus', param: 'brands'},
       ]
     }
   }

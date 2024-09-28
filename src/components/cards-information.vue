@@ -2,16 +2,15 @@
   <div class="container cards-information mb-lg-5" v-if="cardsData">
     <div class="d-flex flex-wrap justify-content-between">
       <div class="mb-5" v-for="(card, index) in cards" :key="index">
-        <div class="card cards-information-block">
+        <div class="card h-100 cards-information-block">
           <div class="card-body">
             <img
                 @mouseenter="card.hovered = true"
                 @mouseleave="card.hovered = false"
                 class="card-img-top"
                 alt="Card image"
-                :src="card?.hovered ? card?.hoverImage : card?.defaultImage"
-            >
-<pre>{{card.hovered ? card.hoverImage : card.defaultImage}}</pre>
+                :src="card.hovered && card.hoverImage ? `/assets/images${card.hoverImage}` : `/assets/images${card.defaultImage}`"
+            />
              <div class="cards-information__title">
                <a href="#">{{card.title}}</a>
              </div>
@@ -56,38 +55,7 @@ export default {
   },
   data() {
     return {
-      cards: [
-        // {
-        //   defaultImage: require('@/assets/images/EcoFlow-RIVER-2-Pro-38-Picture-01-228x228.webp'),
-        //   hoverImage: require('../assets/images/eco-flow-river-2.webp'),
-        //   hovered: false
-        // },
-        // {
-        //   defaultImage: require('@/assets/images/EcoFlow-RIVER-2-Pro-38-Picture-01-228x228.webp'),
-        //   hoverImage: require('../assets/images/eco-flow-river-2.webp'),
-        //   hovered: false
-        // },
-        // {
-        //   defaultImage: require('@/assets/images/EcoFlow-RIVER-2-Pro-38-Picture-01-228x228.webp'),
-        //   hoverImage: require('../assets/images/eco-flow-river-2.webp'),
-        //   hovered: false
-        // },
-        // {
-        //   defaultImage: require('@/assets/images/EcoFlow-RIVER-2-Pro-38-Picture-01-228x228.webp'),
-        //   hoverImage: require('../assets/images/eco-flow-river-2.webp'),
-        //   hovered: false
-        // },
-        // {
-        //   defaultImage: require('@/assets/images/EcoFlow-RIVER-2-Pro-38-Picture-01-228x228.webp'),
-        //   hoverImage: require('../assets/images/eco-flow-river-2.webp'),
-        //   hovered: false
-        // },
-        // {
-        //   defaultImage: require('@/assets/images/EcoFlow-RIVER-2-Pro-38-Picture-01-228x228.webp'),
-        //   hoverImage: require('../assets/images/eco-flow-river-2.webp'),
-        //   hovered: false
-        // },
-      ]
+      cards: []
     }
   },
   mounted() {
@@ -100,8 +68,8 @@ export default {
         rate: card.rate,
         cashback: card.cashback,
         defaultImage: card.imageUrl,
-        hoverImage: card.imageUrl,
-        hovered: false
+        hoverImage: card.imageUrl1 || null,
+        hovered: card.hovered
       };
     });
   }
