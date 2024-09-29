@@ -1,9 +1,9 @@
 <template>
-  <div class="container cards-information mb-lg-5" v-if="cardsData">
-    <div class="d-flex flex-wrap justify-content-between">
-      <div class="mb-5" v-for="(card, index) in cards" :key="index">
+  <div class="cards-information mb-lg-5" v-if="cardsData">
+    <div class="d-flex flex-wrap gap-3">
+      <div v-for="(card, index) in cards" :key="index">
         <div class="card h-100 cards-information-block">
-          <div class="card-body">
+          <div class="card-body d-flex flex-column justify-content-between">
             <img
                 @mouseenter="card.hovered = true"
                 @mouseleave="card.hovered = false"
@@ -14,26 +14,29 @@
              <div class="cards-information__title">
                <a href="#">{{card.title}}</a>
              </div>
-              <div class="mt-3 fw-bolder cards-information__price"><span>{{card.price}} ₴</span></div>
-            <div class="d-flex mt-2">
-              <div class="btn btn-outline-secondary icon-button cart-button">
-                <i class="bi bi-cart"></i>
-                <span class="cart-text">Купити</span>
+            <div class="card-information__additional-info">
+              <div class="mt-3 fw-bolder cards-information__price"><span>{{card.price}} ₴</span>
               </div>
-              <div class="btn btn-outline-secondary icon-button">
-                <i class="bi bi-heart"></i>
+              <div class="d-flex mt-2">
+                <div class="btn btn-outline-secondary icon-button cart-button">
+                  <i class="bi bi-cart"></i>
+                  <span class="cart-text">Купити</span>
+                </div>
+                <div class="btn btn-outline-secondary icon-button">
+                  <i class="bi bi-heart"></i>
+                </div>
+                <div class="btn btn-outline-secondary icon-button">
+                  <i class="bi bi-arrows"></i>
+                </div>
               </div>
-              <div class="btn btn-outline-secondary icon-button">
-                <i class="bi bi-arrows"></i>
-              </div>
-            </div>
-            <div class="d-flex justify-content-between">
-              <div class="cards-information-block__cashback">
-                <span class="fw-bold">КЕШБЕК {{card.cashback}} ₴</span>
-              </div>
-              <div class="cards-information-block__stars">
-                <i v-for="i in Math.floor(card.rate)" :key="i" class="bi bi-star-fill"></i>
-                <i v-for="i in (5 - Math.floor(card.rate))" :key="'empty-' + i" class="bi bi-star"></i>
+              <div class="d-flex justify-content-between">
+                <div class="cards-information-block__cashback">
+                  <span class="fw-bold">КЕШБЕК {{card.cashback}} ₴</span>
+                </div>
+                <div class="cards-information-block__stars">
+                  <i v-for="i in Math.floor(card.rate)" :key="i" class="bi bi-star-fill"></i>
+                  <i v-for="i in (5 - Math.floor(card.rate))" :key="'empty-' + i" class="bi bi-star"></i>
+                </div>
               </div>
             </div>
           </div>
@@ -60,7 +63,6 @@ export default {
   },
   mounted() {
     this.cards = this.cardsData.map((card) => {
-      console.log('card', card);
       return {
         title: card.name,
         link: card.link,
@@ -68,7 +70,7 @@ export default {
         rate: card.rate,
         cashback: card.cashback,
         defaultImage: card.imageUrl,
-        hoverImage: card.imageUrl1 || null,
+        hoverImage: card.imageUrl1,
         hovered: card.hovered
       };
     });
@@ -77,7 +79,6 @@ export default {
 </script>
 
 <style scoped>
-
 .cards-information__title a {
   color: #000;
   text-decoration: none;
@@ -85,6 +86,9 @@ export default {
   white-space: normal;
   transition: all .1s linear;
   hyphens: auto;
+  height: 2.5rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .cards-information__title a:hover {
