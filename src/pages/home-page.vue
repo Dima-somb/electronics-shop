@@ -3,7 +3,7 @@
   <div class="home-content">
     <app-categories></app-categories>
     <app-brands></app-brands>
-<!--    <app-cards-information></app-cards-information>-->
+<!--    <app-cards-information :cardsData="null"></app-cards-information>-->
   </div>
 </template>
 
@@ -14,7 +14,11 @@ import AppBrands from "@/components/app-brands";
 // import AppCardsInformation from "@/components/cards-information";
 export default {
   name: "home-page",
-  components: {AppBrands, AppCategories, AppCarousel}
+  components: {AppBrands, AppCategories, AppCarousel},
+  data() {
+    return {
+    }
+  }
 }
 </script>
 

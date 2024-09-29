@@ -18,28 +18,6 @@ export default {
     }
   },
   computed: {
-    categoryTitle() {
-      switch (this.$route.query.name) {
-        case 'smartphones':
-          return 'Смартфони';
-        case 'televisions':
-          return 'Телевізори';
-        case 'laptops':
-          return 'Ноутбуки';
-        case 'power-supplies':
-          return 'Електроживлення';
-        case 'xiaomi':
-          return 'Xiaomi';
-        case 'samsung':
-          return 'Samsung';
-        case 'baseus':
-          return 'Baseus';
-        case 'dyson':
-          return 'Dyson';
-        default:
-          return 'Невідома категорія';
-      }
-    },
     query() {
       return this.$route.query.name;
     }
