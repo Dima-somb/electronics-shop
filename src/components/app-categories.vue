@@ -16,7 +16,13 @@
     </div>
     <div class="d-flex justify-content-center">
       <div class="">
-        <button type="button" class="btn btn-lg btn btn-outline-primary all-categories">Усі категорії</button>
+        <button
+            type="button"
+            class="btn btn-lg btn btn-outline-primary all-categories"
+            @click="getAllCategories()"
+        >
+          Усі категорії
+        </button>
       </div>
     </div>
   </div>
@@ -33,6 +39,11 @@ export default {
         {title: 'Ноутбуки', param: 'categories', tech: 'laptops', icon: 'bi-laptop'},
         {title: 'Електроживлення', param: 'categories', tech: 'power-supplies', icon: 'bi-battery-charging'},
       ]
+    }
+  },
+  methods: {
+    getAllCategories() {
+      this.$router.push({ name: 'Electronic', params: { prm: "categories"} })
     }
   }
 }

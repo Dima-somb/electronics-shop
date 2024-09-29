@@ -30,15 +30,36 @@ export default {
         if(this.prm === 'brands') {
           response = await axios.get(`/brands?name=${this.query}`);
         } else {
-          response = await axios.get(`/categories?name=${this.query}`);
+          if(this.query) {
+            response = await axios.get(`/categories?name=${this.query}`);
+          }
+          else {
+            response = await axios.get(`/categories`);
+          }
+
         }
 
         if(response.data.length > 0) {
-          this.cardsData = response.data[0].products
+          if(this.query) {
+            this.cardsData = response.data[0].products;
+          } else {
+            response.data.forEach((category) => {
+              this.cardsData.push(...category.products);
+            });
+            this.cardsData = this.shuffleArray(this.cardsData);
+          }
         }
       } catch (error) {
         console.error("Помилка при завантаженні категорії:",error);
       }
+    },
+
+    shuffleArray(array) {
+      for (let i = array.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [array[i], array[j]] = [array[j], array[i]];
+      }
+      return array;
     }
   },
 
