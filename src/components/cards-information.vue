@@ -1,7 +1,8 @@
 <template>
   <div class="cards-information mb-lg-5" v-if="cardsData">
-    <div class="d-flex flex-wrap gap-3">
-      <div v-for="(card, index) in cards" :key="index">
+    <div class="section-title my-5">{{title}}</div>
+    <div class="d-flex flex-wrap gap-2">
+      <div v-for="card in cards"  :key="card.id">
         <div class="card h-100 cards-information-block">
           <div class="card-body d-flex flex-column justify-content-between">
             <img
@@ -54,6 +55,10 @@ export default {
       type: Array,
       required: true,
       default: () => []
+    },
+    title: {
+      required: false,
+      type: String
     }
   },
   data() {
@@ -61,24 +66,41 @@ export default {
       cards: []
     }
   },
+
   mounted() {
-    this.cards = this.cardsData.map((card) => {
-      return {
-        title: card.name,
-        link: card.link,
-        price: card.price,
-        rate: card.rate,
-        cashback: card.cashback,
-        defaultImage: card.imageUrl,
-        hoverImage: card.imageUrl1,
-        hovered: card.hovered
-      };
-    });
+    console.log('cardsData', this.cardsData)
+    if(this.cardsData.length > 0) {
+      this.cards = this.cardsData?.map((card) => {
+        return {
+          title: card.name,
+          link: card.link,
+          price: card.price,
+          rate: card.rate,
+          cashback: card.cashback,
+          defaultImage: card.imageUrl,
+          hoverImage: card.imageUrl1,
+          hovered: card.hovered
+        };
+      });
+    }
   }
 }
 </script>
 
 <style scoped>
+
+.section-title {
+  color: #333;
+  font-size: 2.5rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: .05rem;
+  line-height: 3.2rem;
+  margin-bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 .cards-information__title a {
   color: #000;
   text-decoration: none;

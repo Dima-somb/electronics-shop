@@ -733,6 +733,40 @@
         },
         {
           "id": 1,
+          "brand": "EcoFlow",
+          "name": "Зарядна станція EcoFlow RIVER 2 Pro",
+          "cashback": 136,
+          "price": 27299,
+          "rate": 4,
+          "imageUrl1": "/brands/ecoflow/eco-flow-river-2.webp",
+          "imageUrl": "/brands/ecoflow/EcoFlow-RIVER-2-Pro-38-Picture-01-228x228.webp",
+          "hovered": false
+        },
+        {
+          "id": 1,
+          "brand": "EcoFlow",
+          "name": "Зарядна станція EcoFlow RIVER 2 Pro",
+          "cashback": 136,
+          "price": 27299,
+          "rate": 4,
+          "imageUrl1": "/brands/ecoflow/eco-flow-river-2.webp",
+          "imageUrl": "/brands/ecoflow/EcoFlow-RIVER-2-Pro-38-Picture-01-228x228.webp",
+          "hovered": false
+        },
+        {
+          "id": 1,
+          "brand": "EcoFlow",
+          "name": "Зарядна станція EcoFlow RIVER 2 Pro",
+          "cashback": 136,
+          "price": 27299,
+          "rate": 4,
+          "imageUrl1": "/brands/ecoflow/eco-flow-river-2.webp",
+          "imageUrl": "/brands/ecoflow/EcoFlow-RIVER-2-Pro-38-Picture-01-228x228.webp",
+          "hovered": false
+        },
+
+        {
+          "id": 1,
           "brand": "Baseus Bipow Digital Display",
           "name": "Baseus Bipow Digital Display 30000mAh 20W Black",
           "cashback": 130,
