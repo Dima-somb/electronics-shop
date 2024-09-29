@@ -1,8 +1,8 @@
 <template>
   <div class="cards-information mb-lg-5" v-if="cardsData">
     <div class="section-title my-5">{{title}}</div>
-    <div class="d-flex flex-wrap gap-2">
-      <div v-for="card in cards"  :key="card.id">
+    <div class="d-flex flex-wrap justify-content-sm-center justify-content-lg-between  gap-lg-3 gap-md-4 gap-sm-1">
+      <div v-for="card in cards"  :key="card.id" class="mb-4">
         <div class="card h-100 cards-information-block">
           <div class="card-body d-flex flex-column justify-content-between">
             <img
@@ -67,22 +67,37 @@ export default {
     }
   },
 
-  mounted() {
-    console.log('cardsData', this.cardsData)
-    if(this.cardsData.length > 0) {
-      this.cards = this.cardsData?.map((card) => {
-        return {
-          title: card.name,
-          link: card.link,
-          price: card.price,
-          rate: card.rate,
-          cashback: card.cashback,
-          defaultImage: card.imageUrl,
-          hoverImage: card.imageUrl1,
-          hovered: card.hovered
-        };
-      });
+  methods: {
+    updateCards() {
+      if(this.cardsData.length > 0) {
+        this.cards = this.cardsData?.map((card) => {
+          return {
+            title: card.name,
+            link: card.link,
+            price: card.price,
+            rate: card.rate,
+            cashback: card.cashback,
+            defaultImage: card.imageUrl,
+            hoverImage: card.imageUrl1,
+            hovered: card.hovered
+          };
+        });
+      }
     }
+
+  },
+
+  watch: {
+    cardsData: {
+      handler() {
+        this.updateCards();
+      },
+      deep: true
+    }
+  },
+
+  mounted() {
+    this.updateCards();
   }
 }
 </script>
@@ -159,7 +174,7 @@ export default {
 
 .cards-information-block {
   transition: transform .5s;
-  width: 12.8rem;
+  width: 13rem;
 }
 .cards-information-block:hover {
   cursor: pointer;
@@ -187,7 +202,24 @@ export default {
 
 @media(max-width: 434px) {
   .cards-information-block {
-    width: 10.4rem;
+    width: 9.3rem;
+  }
+}
+@media(min-width: 576px) {
+  .cards-information-block {
+    width: 15.8rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .cards-information-block[data-v-3c0180e2] {
+    width: 20.5rem;
+  }
+}
+
+@media (min-width: 992px) {
+  .cards-information-block[data-v-3c0180e2] {
+    width: 18.1rem;
   }
 }
 </style>

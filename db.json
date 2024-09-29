@@ -8,6 +8,7 @@
         {
           "id": 1,
           "category": "Смартфони",
+          "brand": "samsung",
           "name": "Samsung Galaxy S23",
           "price": 800,
           "rate": 3,
@@ -16,6 +17,7 @@
         {
           "id": 2,
           "category": "Телевізори",
+          "brand": "samsung",
           "name": "Samsung QLED TV",
           "price": 1200,
           "rate": 4,
@@ -30,6 +32,7 @@
           "category": "Ноутбуки",
           "name": "Samsung Galaxy Book",
           "price": 1500,
+          "brand": "samsung",
           "rate": 1,
           "cashback": 130,
           "features": [
@@ -41,6 +44,7 @@
           "id": 4,
           "category": "Електроживлення",
           "name": "Samsung Power Bank",
+          "brand": "samsung",
           "price": 50,
           "rate": 3,
           "cashback": 130,
@@ -57,7 +61,7 @@
       "products": [
         {
           "id": 2,
-          "brand": "Xiaomi",
+          "brand": "xiaomi",
           "name": "Смартфон Xiaomi Redmi Note 13 8/256GB Midnight Black (Global)",
           "price": 7999,
           "rate": 5,
@@ -68,7 +72,7 @@
         },
         {
           "id": 3,
-          "brand": "Xiaomi",
+          "brand": "xiaomi",
           "name": "Смартфон Xiaomi Poco M5s 6/128GB Gray (Global)",
           "price": 5399,
           "rate": 3,
@@ -78,7 +82,7 @@
         },
         {
           "id": 4,
-          "brand": "Xiaomi",
+          "brand": "xiaomi",
           "name": "Смартфон Xiaomi Redmi Note 13 Pro 8/256GB Lavender Purple Global",
           "price": 9999,
           "rate": 3,
@@ -88,7 +92,7 @@
         },
         {
           "id": 5,
-          "brand": "Xiaomi",
+          "brand": "xiaomi",
           "name": "Смартфон Xiaomi Redmi 9A 4/64GB Gray CN",
           "price": 3449,
           "rate": 3,
@@ -98,7 +102,7 @@
         },
         {
           "id": 6,
-          "brand": "Xiaomi",
+          "brand": "xiaomi",
           "name": "Смартфон Xiaomi Redmi Note 13 Pro 8/256GB Forest Green Global",
           "price": 9999,
           "rate": 3,
@@ -108,7 +112,7 @@
         },
         {
           "id": 7,
-          "brand": "Xiaomi",
+          "brand": "xiaomi",
           "name": "Смартфон Xiaomi Redmi Note 13 6/128GB Midnight Black (Global)",
           "price": 6999,
           "rate": 3,
@@ -118,7 +122,7 @@
         },
         {
           "id": 8,
-          "brand": "Xiaomi",
+          "brand": "xiaomi",
           "name": "Смартфон Xiaomi Poco M5s 4/128GB Gray (Global)",
           "price": 4849 ,
           "rate": 3,
@@ -128,7 +132,7 @@
         },
         {
           "id": 9,
-          "brand": "Xiaomi",
+          "brand": "xiaomi",
           "name": "Смартфон Xiaomi POCO F6 12/512GB Black (Global)",
           "price": 18999,
           "rate": 3,
@@ -138,7 +142,7 @@
         },
         {
           "id": 10,
-          "brand": "Xiaomi",
+          "brand": "xiaomi",
           "name": "Смартфон Xiaomi Redmi Note 12S 8/256GB Onyx Black (Global)",
           "price": 6849,
           "rate": 3,
@@ -148,7 +152,7 @@
         },
         {
           "id": 11,
-          "brand": "Xiaomi",
+          "brand": "xiaomi",
           "name": "Смартфон Xiaomi Redmi 13 8/256GB Midnight Black (Global)",
           "price": 7999,
           "rate": 3,
@@ -158,7 +162,7 @@
         },
         {
           "id": 12,
-          "brand": "Xiaomi",
+          "brand": "xiaomi",
           "name": "Смартфон Xiaomi Poco X6 Pro 5G 12/512GB Gray (Global)",
           "price": 16999,
           "rate": 3,
@@ -168,7 +172,7 @@
         },
         {
           "id": 13,
-          "brand": "Xiaomi",
+          "brand": "xiaomi",
           "name": "Смартфон Xiaomi Redmi Note 9 NFC 3/64GB Forest Green Global А- (БУ)",
           "price": 1799,
           "rate": 3,
@@ -179,7 +183,7 @@
 
         {
           "id": 14,
-          "brand": "Xiaomi",
+          "brand": "xiaomi",
           "name": "Смартфон Xiaomi Redmi Note 13 Pro Plus 8/256GB White Global",
           "price": 16999,
           "rate": 3,
@@ -189,7 +193,7 @@
         },
         {
           "id": 15,
-          "brand": "Xiaomi",
+          "brand": "xiaomi",
           "name": "Смартфон Xiaomi Redmi Note 13 Pro Plus 8/256GB Midnight Black (Global)",
           "price": 16999,
           "rate": 3,
@@ -199,7 +203,7 @@
         },
         {
           "id": 16,
-          "brand": "Xiaomi",
+          "brand": "xiaomi",
           "name": "Смартфон Xiaomi Redmi Note 13 Pro 5G 8/256GB Ocean Teal Global",
           "price": 16999,
           "rate": 3,
@@ -209,7 +213,7 @@
         },
         {
           "id": 17,
-          "brand": "Xiaomi",
+          "brand": "xiaomi",
           "name": "Смартфон Xiaomi Redmi Note 13 Pro 5G 8/256GB Midnight Black (Global)",
           "price": 16999,
           "rate": 3,
@@ -219,7 +223,7 @@
         },
         {
           "id": 18,
-          "brand": "Xiaomi",
+          "brand": "xiaomi",
           "name": "Смартфон Xiaomi Redmi Note 13 Pro 12/512GB Forest Green (Global)",
           "price": 11349,
           "rate": 3,
@@ -229,7 +233,7 @@
         },
         {
           "id": 19,
-          "brand": "Xiaomi",
+          "brand": "xiaomi",
           "name": "Смартфон Xiaomi Redmi Note 13 5G 8/256GB Graphite Black Global",
           "price": 16999,
           "rate": 3,
@@ -239,7 +243,7 @@
         },
         {
           "id": 21,
-          "brand": "Xiaomi",
+          "brand": "xiaomi",
           "name": "Смартфон Xiaomi Redmi Note 13 8/256GB Midnight Black (Global)",
           "price": 7999,
           "rate": 3,
@@ -249,7 +253,7 @@
         },
         {
           "id": 22,
-          "brand": "Xiaomi",
+          "brand": "xiaomi",
           "name": "Смартфон Xiaomi Poco M5s 6/128GB Gray (Global)",
           "price": 5399,
           "rate": 3,
@@ -259,7 +263,7 @@
         },
         {
           "id": 23,
-          "brand": "Xiaomi",
+          "brand": "xiaomi",
           "name": "Смартфон Xiaomi Redmi Note 13 Pro 8/256GB Lavender Purple Global",
           "price": 9999,
           "rate": 3,
@@ -269,7 +273,7 @@
         },
         {
           "id": 24,
-          "brand": "Xiaomi",
+          "brand": "xiaomi",
           "name": "Смартфон Xiaomi Redmi 9A 4/64GB Gray CN",
           "price": 3449,
           "rate": 3,
@@ -279,7 +283,7 @@
         },
         {
           "id": 25,
-          "brand": "Xiaomi",
+          "brand": "xiaomi",
           "name": "Смартфон Xiaomi Redmi Note 13 Pro 8/256GB Forest Green Global",
           "price": 9999,
           "rate": 3,
@@ -289,7 +293,7 @@
         },
         {
           "id": 26,
-          "brand": "Xiaomi",
+          "brand": "xiaomi",
           "name": "Смартфон Xiaomi Redmi Note 13 6/128GB Midnight Black (Global)",
           "price": 6999,
           "rate": 3,
@@ -299,7 +303,7 @@
         },
         {
           "id": 27,
-          "brand": "Xiaomi",
+          "brand": "xiaomi",
           "name": "Смартфон Xiaomi Poco M5s 4/128GB Gray (Global)",
           "price": 4849 ,
           "rate": 3,
@@ -309,7 +313,7 @@
         },
         {
           "id": 28,
-          "brand": "Xiaomi",
+          "brand": "xiaomi",
           "name": "Смартфон Xiaomi POCO F6 12/512GB Black (Global)",
           "price": 18999,
           "rate": 3,
@@ -319,7 +323,7 @@
         },
         {
           "id": 29,
-          "brand": "Xiaomi",
+          "brand": "xiaomi",
           "name": "Смартфон Xiaomi Redmi Note 12S 8/256GB Onyx Black (Global)",
           "price": 6849,
           "rate": 3,
@@ -329,7 +333,7 @@
         },
         {
           "id": 30,
-          "brand": "Xiaomi",
+          "brand": "xiaomi",
           "name": "Смартфон Xiaomi Redmi 13 8/256GB Midnight Black (Global)",
           "price": 7999,
           "rate": 3,
@@ -339,7 +343,7 @@
         },
         {
           "id": 31,
-          "brand": "Xiaomi",
+          "brand": "xiaomi",
           "name": "Смартфон Xiaomi Poco X6 Pro 5G 12/512GB Gray (Global)",
           "price": 16999,
           "rate": 3,
@@ -349,7 +353,7 @@
         },
         {
           "id": 32,
-          "brand": "Xiaomi",
+          "brand": "xiaomi",
           "name": "Смартфон Xiaomi Redmi Note 9 NFC 3/64GB Forest Green Global А- (БУ)",
           "price": 1799,
           "rate": 3,
@@ -368,7 +372,7 @@
       "products": [
         {
           "id": 1,
-          "brand": "Samsung",
+          "brand": "samsung",
           "name": "Samsung Galaxy S23",
           "price": 800,
           "rate": 3,
@@ -378,7 +382,7 @@
         },
         {
           "id": 2,
-          "brand": "Xiaomi",
+          "brand": "xiaomi",
           "name": "Смартфон Xiaomi Redmi Note 13 8/256GB Midnight Black (Global)",
           "price": 7999,
           "rate": 5,
@@ -389,7 +393,7 @@
         },
         {
           "id": 3,
-          "brand": "Xiaomi",
+          "brand": "xiaomi",
           "name": "Смартфон Xiaomi Poco M5s 6/128GB Gray (Global)",
           "price": 5399,
           "rate": 3,
@@ -399,7 +403,7 @@
         },
         {
           "id": 4,
-          "brand": "Xiaomi",
+          "brand": "xiaomi",
           "name": "Смартфон Xiaomi Redmi Note 13 Pro 8/256GB Lavender Purple Global",
           "price": 9999,
           "rate": 3,
@@ -409,7 +413,7 @@
         },
         {
           "id": 5,
-          "brand": "Xiaomi",
+          "brand": "xiaomi",
           "name": "Смартфон Xiaomi Redmi 9A 4/64GB Gray CN",
           "price": 3449,
           "rate": 3,
@@ -419,7 +423,7 @@
         },
         {
           "id": 6,
-          "brand": "Xiaomi",
+          "brand": "xiaomi",
           "name": "Смартфон Xiaomi Redmi Note 13 Pro 8/256GB Forest Green Global",
           "price": 9999,
           "rate": 3,
@@ -429,7 +433,7 @@
         },
         {
           "id": 7,
-          "brand": "Xiaomi",
+          "brand": "xiaomi",
           "name": "Смартфон Xiaomi Redmi Note 13 6/128GB Midnight Black (Global)",
           "price": 6999,
           "rate": 3,
@@ -439,7 +443,7 @@
         },
         {
           "id": 8,
-          "brand": "Xiaomi",
+          "brand": "xiaomi",
           "name": "Смартфон Xiaomi Poco M5s 4/128GB Gray (Global)",
           "price": 4849 ,
           "rate": 3,
@@ -449,7 +453,7 @@
         },
         {
           "id": 9,
-          "brand": "Xiaomi",
+          "brand": "xiaomi",
           "name": "Смартфон Xiaomi POCO F6 12/512GB Black (Global)",
           "price": 18999,
           "rate": 3,
@@ -459,7 +463,7 @@
         },
         {
           "id": 10,
-          "brand": "Xiaomi",
+          "brand": "xiaomi",
           "name": "Смартфон Xiaomi Redmi Note 12S 8/256GB Onyx Black (Global)",
           "price": 6849,
           "rate": 3,
@@ -469,7 +473,7 @@
         },
         {
           "id": 11,
-          "brand": "Xiaomi",
+          "brand": "xiaomi",
           "name": "Смартфон Xiaomi Redmi 13 8/256GB Midnight Black (Global)",
           "price": 7999,
           "rate": 3,
@@ -479,7 +483,7 @@
         },
         {
           "id": 12,
-          "brand": "Xiaomi",
+          "brand": "xiaomi",
           "name": "Смартфон Xiaomi Poco X6 Pro 5G 12/512GB Gray (Global)",
           "price": 16999,
           "rate": 3,
@@ -489,7 +493,7 @@
         },
         {
           "id": 13,
-          "brand": "Xiaomi",
+          "brand": "xiaomi",
           "name": "Смартфон Xiaomi Redmi Note 9 NFC 3/64GB Forest Green Global А- (БУ)",
           "price": 1799,
           "rate": 3,
@@ -500,7 +504,7 @@
 
         {
           "id": 14,
-          "brand": "Xiaomi",
+          "brand": "xiaomi",
           "name": "Смартфон Xiaomi Redmi Note 13 Pro Plus 8/256GB White Global",
           "price": 16999,
           "rate": 3,
@@ -510,7 +514,7 @@
         },
         {
           "id": 15,
-          "brand": "Xiaomi",
+          "brand": "xiaomi",
           "name": "Смартфон Xiaomi Redmi Note 13 Pro Plus 8/256GB Midnight Black (Global)",
           "price": 16999,
           "rate": 3,
@@ -520,7 +524,7 @@
         },
         {
           "id": 16,
-          "brand": "Xiaomi",
+          "brand": "xiaomi",
           "name": "Смартфон Xiaomi Redmi Note 13 Pro 5G 8/256GB Ocean Teal Global",
           "price": 16999,
           "rate": 3,
@@ -530,7 +534,7 @@
         },
         {
           "id": 17,
-          "brand": "Xiaomi",
+          "brand": "xiaomi",
           "name": "Смартфон Xiaomi Redmi Note 13 Pro 5G 8/256GB Midnight Black (Global)",
           "price": 16999,
           "rate": 3,
@@ -540,7 +544,7 @@
         },
         {
           "id": 18,
-          "brand": "Xiaomi",
+          "brand": "xiaomi",
           "name": "Смартфон Xiaomi Redmi Note 13 Pro 12/512GB Forest Green (Global)",
           "price": 11349,
           "rate": 3,
@@ -550,7 +554,7 @@
         },
         {
           "id": 19,
-          "brand": "Xiaomi",
+          "brand": "xiaomi",
           "name": "Смартфон Xiaomi Redmi Note 13 5G 8/256GB Graphite Black Global",
           "price": 16999,
           "rate": 3,
@@ -560,7 +564,7 @@
         },
         {
           "id": 21,
-          "brand": "Xiaomi",
+          "brand": "xiaomi",
           "name": "Смартфон Xiaomi Redmi Note 13 8/256GB Midnight Black (Global)",
           "price": 7999,
           "rate": 3,
@@ -570,7 +574,7 @@
         },
         {
           "id": 22,
-          "brand": "Xiaomi",
+          "brand": "xiaomi",
           "name": "Смартфон Xiaomi Poco M5s 6/128GB Gray (Global)",
           "price": 5399,
           "rate": 3,
@@ -580,7 +584,7 @@
         },
         {
           "id": 23,
-          "brand": "Xiaomi",
+          "brand": "xiaomi",
           "name": "Смартфон Xiaomi Redmi Note 13 Pro 8/256GB Lavender Purple Global",
           "price": 9999,
           "rate": 3,
@@ -590,7 +594,7 @@
         },
         {
           "id": 24,
-          "brand": "Xiaomi",
+          "brand": "xiaomi",
           "name": "Смартфон Xiaomi Redmi 9A 4/64GB Gray CN",
           "price": 3449,
           "rate": 3,
@@ -600,7 +604,7 @@
         },
         {
           "id": 25,
-          "brand": "Xiaomi",
+          "brand": "xiaomi",
           "name": "Смартфон Xiaomi Redmi Note 13 Pro 8/256GB Forest Green Global",
           "price": 9999,
           "rate": 3,
@@ -610,7 +614,7 @@
         },
         {
           "id": 26,
-          "brand": "Xiaomi",
+          "brand": "xiaomi",
           "name": "Смартфон Xiaomi Redmi Note 13 6/128GB Midnight Black (Global)",
           "price": 6999,
           "rate": 3,
@@ -620,7 +624,7 @@
         },
         {
           "id": 27,
-          "brand": "Xiaomi",
+          "brand": "xiaomi",
           "name": "Смартфон Xiaomi Poco M5s 4/128GB Gray (Global)",
           "price": 4849 ,
           "rate": 3,
@@ -630,7 +634,7 @@
         },
         {
           "id": 28,
-          "brand": "Xiaomi",
+          "brand": "xiaomi",
           "name": "Смартфон Xiaomi POCO F6 12/512GB Black (Global)",
           "price": 18999,
           "rate": 3,
@@ -640,7 +644,7 @@
         },
         {
           "id": 29,
-          "brand": "Xiaomi",
+          "brand": "xiaomi",
           "name": "Смартфон Xiaomi Redmi Note 12S 8/256GB Onyx Black (Global)",
           "price": 6849,
           "rate": 3,
@@ -650,7 +654,7 @@
         },
         {
           "id": 30,
-          "brand": "Xiaomi",
+          "brand": "xiaomi",
           "name": "Смартфон Xiaomi Redmi 13 8/256GB Midnight Black (Global)",
           "price": 7999,
           "rate": 3,
@@ -660,7 +664,7 @@
         },
         {
           "id": 31,
-          "brand": "Xiaomi",
+          "brand": "xiaomi",
           "name": "Смартфон Xiaomi Poco X6 Pro 5G 12/512GB Gray (Global)",
           "price": 16999,
           "rate": 3,
@@ -670,7 +674,7 @@
         },
         {
           "id": 32,
-          "brand": "Xiaomi",
+          "brand": "xiaomi",
           "name": "Смартфон Xiaomi Redmi Note 9 NFC 3/64GB Forest Green Global А- (БУ)",
           "price": 1799,
           "rate": 3,
@@ -687,7 +691,7 @@
       "products": [
         {
           "id": 32,
-          "brand": "Samsung",
+          "brand": "samsung",
           "name": "Samsung QLED TV",
           "price": 1799,
           "rate": 3,
@@ -704,7 +708,7 @@
       "products": [
         {
           "id": 1,
-          "brand": "Lenovo",
+          "brand": "lenovo",
           "name": "Ноутбук Lenovo IdeaPad Gaming 3 15ACH6 (82K2028DPB) Shadow Black",
           "price": 26999,
           "rate": 5,
@@ -722,7 +726,7 @@
       "products": [
         {
           "id": 1,
-          "brand": "EcoFlow",
+          "brand": "ecoflow",
           "name": "Зарядна станція EcoFlow RIVER 2 Pro",
           "cashback": 136,
           "price": 27299,
@@ -733,7 +737,7 @@
         },
         {
           "id": 1,
-          "brand": "EcoFlow",
+          "brand": "ecoflow",
           "name": "Зарядна станція EcoFlow RIVER 2 Pro",
           "cashback": 136,
           "price": 27299,
@@ -744,7 +748,7 @@
         },
         {
           "id": 1,
-          "brand": "EcoFlow",
+          "brand": "ecoflow",
           "name": "Зарядна станція EcoFlow RIVER 2 Pro",
           "cashback": 136,
           "price": 27299,
@@ -755,7 +759,7 @@
         },
         {
           "id": 1,
-          "brand": "EcoFlow",
+          "brand": "ecoflow",
           "name": "Зарядна станція EcoFlow RIVER 2 Pro",
           "cashback": 136,
           "price": 27299,
@@ -767,7 +771,7 @@
 
         {
           "id": 1,
-          "brand": "Baseus Bipow Digital Display",
+          "brand": "baseus-bipow",
           "name": "Baseus Bipow Digital Display 30000mAh 20W Black",
           "cashback": 130,
           "price": 1719,
@@ -778,7 +782,7 @@
         },
         {
           "id": 2,
-          "brand": "Neo",
+          "brand": "neo",
           "name": "Ліхтарик Neo Tools 99-037 Black",
           "price": 1649,
           "cashback": 17,

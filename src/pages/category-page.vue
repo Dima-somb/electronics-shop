@@ -28,10 +28,10 @@ export default {
       try {
         let response = '';
         if(this.prm === 'brands') {
-          response = await axios.get(`/brands?name=${this.query}`);
+          response = await axios.get(`/brands?name=${this.query.toLowerCase()}`);
         } else {
           if(this.query) {
-            response = await axios.get(`/categories?name=${this.query}`);
+            response = await axios.get(`/categories?name=${this.query.toLowerCase()}`);
           }
           else {
             response = await axios.get(`/categories`);
@@ -47,6 +47,7 @@ export default {
               this.cardsData.push(...category.products);
             });
             this.cardsData = this.shuffleArray(this.cardsData);
+
           }
         }
       } catch (error) {
@@ -62,8 +63,14 @@ export default {
       return array;
     }
   },
+  created() {
+    this.$watch(
+        () => this.$route.query.name,
+        () => {
+          this.fetchCategoryData();
+        }
+    );
 
-  mounted() {
     this.fetchCategoryData();
   }
 }

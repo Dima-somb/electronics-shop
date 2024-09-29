@@ -12,9 +12,15 @@
           <button class="btn btn-primary" type="button"><i class="bi bi-search"></i></button>
         </div>
         <div class="list-group search-container p-2" v-if="filteredProducts.length > 0">
-          <a href="#" class="list-group-item list-group-item-action search__link" v-for="product in filteredProducts" :key="product.id" aria-current="true">
-            {{ product }}
-          </a>
+          <router-link
+              :to="{ name: 'Electronic', params: { prm: 'brands' }, query: { name: product.brand }}"
+              class="list-group-item list-group-item-action search__link"
+              v-for="product in filteredProducts"
+              :key="product.id"
+              aria-current="true"
+              @click="closeSearch(product)">
+               {{ product.name }}
+          </router-link>
         </div>
       </div>
     </div>
@@ -32,7 +38,7 @@ export default {
       products: [],
       filteredProducts: [],
       searchTerm: ''
-    }
+    };
   },
 
   methods: {
@@ -40,29 +46,38 @@ export default {
       try {
         const fetchedProducts = await axios.get(`/categories`);
 
-        if(fetchedProducts.data.length > 0) {
-          this.products = fetchedProducts.data.flatMap(category => category.products.map(product => product.name));
+        if (fetchedProducts.data.length > 0) {
+          this.products = fetchedProducts.data.flatMap(category =>
+              category.products.map(product => ({
+                ...product,
+                categoryName: category.name
+              }))
+          );
         }
-
       } catch (e) {
-        console.log(e)
+        console.log(e);
       }
     },
 
     filterProducts() {
-      if(this.searchTerm) {
+      if (this.searchTerm) {
         this.filteredProducts = this.products.filter(product =>
-            product.toLowerCase().includes(this.searchTerm.toLowerCase())
-        )
+            product.name.toLowerCase().includes(this.searchTerm.toLowerCase())
+        );
       } else {
-        this.filteredProducts = ''
+        this.filteredProducts = [];
       }
+    },
+
+    closeSearch() {
+      this.searchTerm = '';
+      this.filteredProducts = [];
     }
   },
 
   created() {
     this.fetchProducts();
-  }
+  },
 }
 </script>
 

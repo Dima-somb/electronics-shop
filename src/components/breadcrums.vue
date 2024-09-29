@@ -17,7 +17,7 @@ export default {
   computed: {
     breadcrumbs() {
       const crumbs = [];
-      if (this.$route.path !== '/') {
+      if (this.$route.path !== '/' && this.$route.path !== '/categories/categories') {
         crumbs.push({ name: 'Головна', path: '/' });
       }
       let currentCategory = '';
