@@ -1,7 +1,7 @@
 <template>
   <div class="cards-information mb-lg-5" v-if="cardsData">
     <div class="section-title my-5">{{title}}</div>
-    <div class="d-flex flex-wrap justify-content-sm-center justify-content-lg-between  gap-lg-3 gap-md-4 gap-sm-1">
+    <div class="d-flex flex-wrap justify-content-sm-center justify-content-lg-start gap-lg-3 gap-md-4 gap-sm-1">
       <div v-for="card in cards"  :key="card.id" class="mb-4">
         <div class="card h-100 cards-information-block">
           <div class="card-body d-flex flex-column justify-content-between">
