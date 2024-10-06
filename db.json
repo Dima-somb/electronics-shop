@@ -24,6 +24,8 @@
           "price": 1200,
           "rate": 4,
           "cashback": 130,
+          "imageUrl": "",
+          "imageUrl1": "",
           "features": [
             "4K",
             "HDR"
@@ -37,6 +39,8 @@
           "brand": "samsung",
           "rate": 1,
           "cashback": 130,
+          "imageUrl": "",
+          "imageUrl1": "",
           "features": [
             "Intel i7",
             "16GB RAM"
@@ -50,6 +54,8 @@
           "price": 50,
           "rate": 3,
           "cashback": 130,
+          "imageUrl": "",
+          "imageUrl1": "",
           "features": [
             "10000mAh"
           ]

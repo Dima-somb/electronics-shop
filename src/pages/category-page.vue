@@ -1,6 +1,7 @@
 <template>
   <div class="container">
-    <app-cards-information v-if="cardsData && cardsData.length > 0" :cardsData="cardsData"></app-cards-information>
+    <app-cards-information v-if="cardsData.length" :cardsData="cardsData"></app-cards-information>
+    <p v-else>Нічого не знайдено.</p>
   </div>
 </template>
 
@@ -23,46 +24,59 @@ export default {
     },
     selectedItem() {
       return this.$route.query.selectedItem;
-    }
+    },
+    btnSearTerm() {
+      return this.$route.query.btnSearTerm;
+    },
   },
   methods: {
     async fetchCategoryData(searchSelected = false) {
       try {
-        let response = '';
+        let response;
+        const params = {};
 
         if (this.prm === 'brands') {
-          response = await axios.get(`/brands?name=${this.query.toLowerCase()}`);
+          if (this.btnSearTerm) {
+            response = await axios.get(`/brands`, { params });
+          } else if (this.query) {
+            params.name = this.query.toLowerCase();
+            response = await axios.get(`/brands`, { params });
+          } else {
+            response = await axios.get(`/brands`);
+          }
         } else {
           if (this.query) {
-            response = await axios.get(`/categories?name=${this.query.toLowerCase()}`);
+            params.name = this.query.toLowerCase();
+            response = await axios.get(`/categories`, { params });
           } else {
             response = await axios.get(`/categories`);
           }
         }
 
-        if (response.data.length > 0) {
-          if (this.query) {
-            this.cardsData = response.data[0].products;
+        if (response.data.length > 0 && !this.btnSearTerm) {
+          this.cardsData = response.data[0].products || [];
 
-            if (searchSelected && this.selectedItem) {
-              console.log('selectedItem', this.selectedItem);
-              this.cardsData = this.cardsData.filter(product => {
-                return product.id === +this.selectedItem;
-              });
-            }
-          } else {
-            this.cardsData = [];
-            response.data.forEach(category => {
-              this.cardsData.push(...category.products);
-            });
-            this.cardsData = this.shuffleArray(this.cardsData);
+          if (searchSelected && this.selectedItem) {
+            this.cardsData = this.cardsData.filter(product => product.id === +this.selectedItem);
           }
+
+        } else {
+          if (this.btnSearTerm) {
+            this.cardsData = response.data;
+
+            const allProducts = this.cardsData.flatMap(product => product.products);
+            this.filteredProducts = allProducts.filter(product =>
+                product.name.toLowerCase().includes(this.btnSearTerm.toLowerCase())
+            );
+
+            this.cardsData = this.filteredProducts
+          }
+
         }
       } catch (error) {
         console.error("Помилка при завантаженні категорії:", error);
       }
     },
-
     shuffleArray(array) {
       for (let i = array.length - 1; i > 0; i--) {
         const j = Math.floor(Math.random() * (i + 1));
@@ -73,22 +87,15 @@ export default {
   },
   created() {
     this.fetchCategoryData(this.selectedItem !== undefined);
-
-    this.$watch(
-        () => this.query,
-        () => {
-          this.fetchCategoryData();
-        }
-    );
-
-    this.$watch(
-        () => this.selectedItem,
-        (newVal, oldVal) => {
-          if (newVal !== oldVal) {
-            this.fetchCategoryData(true);
-          }
-        }
-    );
+  },
+  watch: {
+    query: 'fetchCategoryData',
+    selectedItem(newVal, oldVal) {
+      if (newVal !== oldVal) {
+        this.fetchCategoryData(true);
+      }
+    },
+    btnSearTerm: 'fetchCategoryData',
   }
 };
 </script>

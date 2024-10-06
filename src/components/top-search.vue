@@ -9,7 +9,7 @@
                  v-model="searchTerm"
                  @input="filterProducts"
           >
-          <button class="btn btn-primary" type="button"><i class="bi bi-search"></i></button>
+          <button class="btn btn-primary" type="button" @click="buttonSearch()"><i class="bi bi-search"></i></button>
         </div>
         <div class="list-group search-container p-2" v-if="filteredProducts.length > 0">
           <router-link
@@ -37,7 +37,8 @@ export default {
     return {
       products: [],
       filteredProducts: [],
-      searchTerm: ''
+      searchTerm: '',
+      btnSearTerm: ''
     };
   },
 
@@ -67,6 +68,18 @@ export default {
       } else {
         this.filteredProducts = [];
       }
+    },
+
+    buttonSearch() {
+      console.log('searchTerm', this.searchTerm);
+      this.btnSearTerm = this.searchTerm;
+
+      this.$router.push({
+        name: 'Electronic',
+        params: {prm: 'brands'},
+        query: { btnSearTerm: this.btnSearTerm }
+      });
+      this.closeSearch()
     },
 
     closeSearch() {
