@@ -55,9 +55,6 @@ export default {
   min-width: 18rem;
 }
 
-/*.all-categories {*/
-/*  background: #2c80e5;*/
-/*}*/
 @media (max-width: 768px) {
   .card {
     min-width: 100%

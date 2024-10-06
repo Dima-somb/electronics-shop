@@ -10,48 +10,56 @@ import AppCardsInformation from "@/components/cards-information";
 
 export default {
   name: "category-page",
-  components: {AppCardsInformation},
-  props: ['prm'],
+  components: { AppCardsInformation },
+  props: ["prm"],
   data() {
     return {
-      cardsData: []
-    }
+      cardsData: [],
+    };
   },
   computed: {
     query() {
       return this.$route.query.name;
+    },
+    selectedItem() {
+      return this.$route.query.selectedItem;
     }
   },
-
   methods: {
-    async fetchCategoryData() {
+    async fetchCategoryData(searchSelected = false) {
       try {
         let response = '';
-        if(this.prm === 'brands') {
+
+        if (this.prm === 'brands') {
           response = await axios.get(`/brands?name=${this.query.toLowerCase()}`);
         } else {
-          if(this.query) {
+          if (this.query) {
             response = await axios.get(`/categories?name=${this.query.toLowerCase()}`);
-          }
-          else {
+          } else {
             response = await axios.get(`/categories`);
           }
-
         }
 
-        if(response.data.length > 0) {
-          if(this.query) {
+        if (response.data.length > 0) {
+          if (this.query) {
             this.cardsData = response.data[0].products;
+
+            if (searchSelected && this.selectedItem) {
+              console.log('selectedItem', this.selectedItem);
+              this.cardsData = this.cardsData.filter(product => {
+                return product.id === +this.selectedItem;
+              });
+            }
           } else {
-            response.data.forEach((category) => {
+            this.cardsData = [];
+            response.data.forEach(category => {
               this.cardsData.push(...category.products);
             });
             this.cardsData = this.shuffleArray(this.cardsData);
-
           }
         }
       } catch (error) {
-        console.error("Помилка при завантаженні категорії:",error);
+        console.error("Помилка при завантаженні категорії:", error);
       }
     },
 
@@ -64,16 +72,25 @@ export default {
     }
   },
   created() {
+    this.fetchCategoryData(this.selectedItem !== undefined);
+
     this.$watch(
-        () => this.$route.query.name,
+        () => this.query,
         () => {
           this.fetchCategoryData();
         }
     );
 
-    this.fetchCategoryData();
+    this.$watch(
+        () => this.selectedItem,
+        (newVal, oldVal) => {
+          if (newVal !== oldVal) {
+            this.fetchCategoryData(true);
+          }
+        }
+    );
   }
-}
+};
 </script>
 
 <style scoped>

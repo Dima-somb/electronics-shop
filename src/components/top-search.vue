@@ -13,7 +13,7 @@
         </div>
         <div class="list-group search-container p-2" v-if="filteredProducts.length > 0">
           <router-link
-              :to="{ name: 'Electronic', params: { prm: 'brands' }, query: { name: product.brand }}"
+              :to="{ name: 'Electronic', params: { prm: 'brands' }, query: { name: product.brand, selectedItem: product.id }}"
               class="list-group-item list-group-item-action search__link"
               v-for="product in filteredProducts"
               :key="product.id"
@@ -88,5 +88,21 @@ export default {
 
 .search-container {
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.list-group-item.active {
+  z-index: 2;
+  color: black;
+  border-top-left-radius: inherit;
+  border-top-right-radius: inherit;
+  background-color: inherit;
+  border-color: inherit;
+}
+
+.list-group-item-action:hover {
+  z-index: 1;
+  color: var(--bs-list-group-action-hover-color);
+  text-decoration: none;
+  background-color: var(--bs-list-group-action-hover-bg);
 }
 </style>
