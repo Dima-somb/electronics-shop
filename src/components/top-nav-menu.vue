@@ -23,7 +23,7 @@
         </div>
         <div class="col-lg-5 align-items-center d-flex justify-content-end">
           <div class="topnav__social-icons">
-            <i class="bi bi-cart me-2"></i>
+            <i class="bi bi-cart me-2"></i>{{counter}}
             <a href="#" class="topnav__user"><i class="bi bi-person me-1"></i>Dmytro</a>
           </div>
         </div>
@@ -58,6 +58,11 @@
 <script>
 export default {
   name: "top-nav-menu",
+  computed: {
+    counter() {
+      return this.$store.state.counter
+    }
+  },
   data() {
     return {
       visible: false,

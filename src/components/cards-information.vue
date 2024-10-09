@@ -21,7 +21,7 @@
               <div class="d-flex mt-2">
                 <div class="btn btn-outline-secondary icon-button cart-button">
                   <i class="bi bi-cart"></i>
-                  <span class="cart-text">Купити</span>
+                  <span class="cart-text" @click="addCount()">Купити</span>
                 </div>
                 <div class="btn btn-outline-secondary icon-button">
                   <i class="bi bi-heart"></i>
@@ -68,6 +68,9 @@ export default {
   },
 
   methods: {
+    addCount() {
+      this.$store.commit('increment')
+    },
     updateCards() {
       if(this.cardsData.length > 0) {
         this.cards = this.cardsData?.map((card) => {

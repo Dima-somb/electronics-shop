@@ -9,6 +9,7 @@ import {createRouter, createWebHistory} from "vue-router";
 import NotFoundPage from "@/pages/not-found-page";
 import CategoryPage from "@/pages/category-page";
 import axios from "axios";
+import store from "@/store";
 
 
 const routes = [
@@ -41,4 +42,5 @@ axios.defaults.baseURL = 'http://localhost:3000';
 
 createApp(App)
     .use(router)
+    .use(store)
     .mount('#app')
