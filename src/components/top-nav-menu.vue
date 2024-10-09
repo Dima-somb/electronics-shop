@@ -3,7 +3,7 @@
       <div class="row">
         <div class="col-lg-2 col-sm-2">
         <span class="topnav__logo">
-          <a href="#">XXX</a>
+          <router-link to="/">XXX</router-link>
         </span>
         </div>
         <div class="col-lg-5 col-sm-10 align-content-center">
@@ -23,7 +23,12 @@
         </div>
         <div class="col-lg-5 align-items-center d-flex justify-content-end">
           <div class="topnav__social-icons">
-            <i class="bi bi-cart me-2"></i>{{counter}}
+
+
+
+            <i><span class="text-danger">{{ orderingDataLength }}</span></i>
+            <i class="order-icon bi bi-cart me-2" @click="goToOrderingPage()">
+            </i>
             <a href="#" class="topnav__user"><i class="bi bi-person me-1"></i>Dmytro</a>
           </div>
         </div>
@@ -56,11 +61,21 @@
 </template>
 
 <script>
+import {mapGetters} from "vuex";
+
 export default {
   name: "top-nav-menu",
   computed: {
     counter() {
       return this.$store.state.counter
+    },
+    ...mapGetters(['orderingDataLength'])
+  },
+  methods: {
+    goToOrderingPage() {
+      if(this.orderingDataLength > 0) {
+        this.$router.push('/ordering-page');
+      }
     }
   },
   data() {
@@ -146,6 +161,10 @@ export default {
     font-size: 36px;
     z-index: 9999;
   }
+
+.order-icon {
+  cursor: pointer;
+}
 
   @media (max-width: 992px) {
     .desktop {
