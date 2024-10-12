@@ -28,8 +28,8 @@
 import AppCarousel from "@/components/carousel";
 import AppCategories from "@/components/app-categories";
 import AppBrands from "@/components/app-brands";
-import axios from "axios";
 import AppCardsInformation from "@/components/cards-information";
+import ApiService from "@/api-service";
 export default {
   name: "home-page",
   components: {AppCardsInformation, AppBrands, AppCategories, AppCarousel},
@@ -43,23 +43,19 @@ export default {
 
   methods: {
     async fetchCategoryData(queryParam, category) {
-      try {
-        let response = await axios.get(`/categories?name=${queryParam}`);
-        if(response.data.length > 0)  {
-          const products = response.data[0].products.slice(0,6);
-
-          if (category === 'power-supplies') {
-            this.powerSupplies = products;
-          } else if (category === 'smartphones') {
-            this.smartphones = products;
-          } else if (category === 'laptops') {
-            this.laptops = products;
-          }
-        }
-      } catch (e) {
-        console.log(e);
-      }
-
+      ApiService.getCategories(queryParam)
+          .then((response) => {
+            if(response.data.length > 0)  {
+              const products = response.data[0].products.slice(0,6);
+                  if (category === 'power-supplies') {
+                    this.powerSupplies = products;
+                  } else if (category === 'smartphones') {
+                    this.smartphones = products;
+                  } else if (category === 'laptops') {
+                    this.laptops = products;
+                  }
+                }
+          }).catch(console.log)
     }
   },
 
