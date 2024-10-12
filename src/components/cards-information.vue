@@ -21,7 +21,7 @@
               <div class="d-flex mt-2">
                 <div class="btn btn-outline-secondary icon-button cart-button">
                   <i class="bi bi-cart"></i>
-                  <span class="cart-text" @click="addCount()">Купити</span>
+                  <span class="cart-text" @click="addOrdering(card)">Купити</span>
                 </div>
                 <div class="btn btn-outline-secondary icon-button">
                   <i class="bi bi-heart"></i>
@@ -48,6 +48,8 @@
 </template>
 
 <script>
+import {mapActions} from "vuex";
+
 export default {
   name: "app-cards-information",
   props: {
@@ -68,13 +70,18 @@ export default {
   },
 
   methods: {
-    addCount() {
-      this.$store.commit('increment')
+    ...mapActions(['addOrderingStuffs']),
+
+    addOrdering(card) {
+      this.addOrderingStuffs({ value: card });
     },
+
+
     updateCards() {
       if(this.cardsData.length > 0) {
         this.cards = this.cardsData?.map((card) => {
           return {
+            id: card.id,
             title: card.name,
             link: card.link,
             price: card.price,

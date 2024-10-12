@@ -10,6 +10,7 @@ import NotFoundPage from "@/pages/not-found-page";
 import CategoryPage from "@/pages/category-page";
 import axios from "axios";
 import store from "@/store";
+import OrderingPage from "@/pages/ordering-page";
 
 
 const routes = [
@@ -23,7 +24,10 @@ const routes = [
         props: true,
         name: 'Electronic',
     },
-
+    {
+        path: '/ordering-page',
+        component: OrderingPage,
+    },
     {
         path: '/:pathMatch(.*)*',
         name: 'NotFound',
