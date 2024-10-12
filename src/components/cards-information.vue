@@ -19,9 +19,9 @@
               <div class="mt-3 fw-bolder cards-information__price"><span>{{card.price}} ₴</span>
               </div>
               <div class="d-flex mt-2">
-                <div class="btn btn-outline-secondary icon-button cart-button">
+                <div class="btn btn-outline-secondary icon-button cart-button" @click="addOrdering(card)">
                   <i class="bi bi-cart"></i>
-                  <span class="cart-text" @click="addOrdering(card)">Купити</span>
+                  <span class="cart-text">Купити</span>
                 </div>
                 <div class="btn btn-outline-secondary icon-button">
                   <i class="bi bi-heart"></i>
