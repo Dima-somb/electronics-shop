@@ -3,66 +3,59 @@
   <div class="home-content">
     <app-categories></app-categories>
     <app-brands></app-brands>
+
+
     <app-cards-information
         class="container"
-        v-if="powerSupplies.length > 0"
+        v-if="powerSupplies && powerSupplies.length"
         :cards-data="powerSupplies"
         title="Підживи свої гаджети"
     ></app-cards-information>
+
     <app-cards-information
         class="container"
-        v-if="smartphones.length > 0"
+        v-if="smartphones && smartphones.length"
         :cards-data="smartphones"
         title="Техніка, що завжди під рукою"
     ></app-cards-information>
-    <app-cards-information
-        class="container"
-        v-if="laptops.length > 0"
-        :cards-data="laptops"
-        title="Весь світ в твоїх руках"
-    ></app-cards-information>
+
+<app-cards-information
+    class="container"
+    v-if="laptops && laptops.length"
+    :cards-data="laptops"
+    title="Весь світ в твоїх руках"
+>
+</app-cards-information>
   </div>
 </template>
 
 <script>
 import AppCarousel from "@/components/carousel";
-import AppCategories from "@/components/app-categories";
 import AppBrands from "@/components/app-brands";
-import AppCardsInformation from "@/components/cards-information";
-import ApiService from "@/api-service";
+import AppCardsInformation from  "@/components/cards-information"
+import AppCategories from "@/components/app-categories";
+
+
 export default {
   name: "home-page",
-  components: {AppCardsInformation, AppBrands, AppCategories, AppCarousel},
-  data() {
-    return {
-      powerSupplies: [],
-      smartphones: [],
-      laptops: []
-    }
-  },
+  components: {AppBrands, AppCarousel, AppCardsInformation, AppCategories},
 
-  methods: {
-    async fetchCategoryData(queryParam, category) {
-      ApiService.getCategories(queryParam)
-          .then((response) => {
-            if(response.data.length > 0)  {
-              const products = response.data[0].products.slice(0,6);
-                  if (category === 'power-supplies') {
-                    this.powerSupplies = products;
-                  } else if (category === 'smartphones') {
-                    this.smartphones = products;
-                  } else if (category === 'laptops') {
-                    this.laptops = products;
-                  }
-                }
-          }).catch(console.log)
+  computed: {
+    laptops() {
+      return this.$store.getters.getLaptops;
+    },
+    powerSupplies() {
+      return this.$store.getters.getPowerSupplies;
+    },
+    smartphones() {
+      return this.$store.getters.getSmartphones;
     }
   },
 
   created() {
-    this.fetchCategoryData('power-supplies', 'power-supplies');
-    this.fetchCategoryData('smartphones', 'smartphones');
-    this.fetchCategoryData('laptops', 'laptops');
+    this.$store.dispatch('fetchCategoriesData', { category: 'laptops', queryParam: 'laptops' });
+    this.$store.dispatch('fetchCategoriesData', { category: 'power-supplies', queryParam: 'power-supplies' });
+    this.$store.dispatch('fetchCategoriesData', { category: 'smartphones', queryParam: 'smartphones' });
   }
 }
 </script>

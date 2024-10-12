@@ -102,13 +102,10 @@ export default {
       handler() {
         this.updateCards();
       },
-      deep: true
+      immediate: true,
     }
   },
 
-  mounted() {
-    this.updateCards();
-  }
 }
 </script>
 
