@@ -1,17 +1,20 @@
 <template>
   <div class="container">
-<!--    <app-cards-information v-if="cardsData.length" :cardsData="cardsData"></app-cards-information>-->
-<!--    <p v-else>Нічого не знайдено.</p>-->
+    <app-cards-information v-if="cardsData && cardsData.length" :cardsData="cardsData"></app-cards-information>
+    <p v-else>Нічого не знайдено.</p>
   </div>
 </template>
 
 <script>
 import axios from "axios";
+import AppCardsInformation from  "@/components/cards-information"
 
 
 export default {
   name: "category-page",
-  components: {  },
+  components: {
+    AppCardsInformation
+  },
   props: ["prm"],
   data() {
     return {

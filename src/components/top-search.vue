@@ -71,7 +71,6 @@ export default {
     },
 
     buttonSearch() {
-      console.log('searchTerm', this.searchTerm);
       this.btnSearTerm = this.searchTerm;
 
       this.$router.push({
