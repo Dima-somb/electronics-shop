@@ -3,15 +3,26 @@ import ApiService from "@/api-service";
 
 export default createStore({
     state: {
-        orderingData: [],
+        orderingData: JSON.parse(localStorage.getItem('orderingData')) || [],
         laptops: null,
         smartphones: null,
         powerSupplies: null,
     },
 
     mutations: {
+        loadOrderingData(state) {
+            const storedData = JSON.parse(localStorage.getItem('orderingData')) || [];
+            state.orderingData = storedData;
+        },
+
         addToOrdering(state, payload) {
+
             state.orderingData.push(payload.value);
+
+            let storedData = JSON.parse(localStorage.getItem('orderingData')) || [];
+            storedData.push(payload.value);
+
+            localStorage.setItem('orderingData', JSON.stringify(storedData));
         },
         setDataForSpecificCategory(state, {category, value}) {
             if (category === 'laptops') {

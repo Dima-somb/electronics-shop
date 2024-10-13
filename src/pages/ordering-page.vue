@@ -20,6 +20,10 @@ export default {
     return {
 
     }
+  },
+
+  mounted() {
+    this.$store.commit('loadOrderingData');
   }
 }
 </script>
