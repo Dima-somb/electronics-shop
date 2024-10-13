@@ -1,6 +1,35 @@
 import {createStore} from "vuex";
 import ApiService from "@/api-service";
 
+
+function setDataWithExpiry(key, value, ttl) {
+    const now = new Date();
+
+    const item = {
+        value: value,
+        expiry: now.getTime() + ttl,
+    };
+    localStorage.setItem(key, JSON.stringify(item));
+}
+
+function getDataWithExpiry(key) {
+    const itemStr = localStorage.getItem(key);
+
+    if (!itemStr) {
+        return null;
+    }
+
+    const item = JSON.parse(itemStr);
+    const now = new Date();
+
+    if (now.getTime() > item.expiry) {
+        localStorage.removeItem(key);
+        return null;
+    }
+
+    return item.value;
+}
+
 export default createStore({
     state: {
         orderingData: [],
@@ -32,16 +61,21 @@ export default createStore({
             const exists = existingData.some(item => item.id === payload.value.id);
             if (!exists) {
                 existingData.push(payload.value);
-                localStorage.setItem('orderStuff', JSON.stringify(existingData));
+                setDataWithExpiry('orderStuff', existingData, 20000);
                 context.commit('addToOrdering', payload);
             }
         },
 
         initializeOrderingData({ commit }) {
-            const existingData = JSON.parse(localStorage.getItem('orderStuff')) || [];
-            existingData.forEach(item => {
-                commit('addToOrdering', { value: item });
-            });
+            const data = getDataWithExpiry('orderStuff');
+
+            if (data) {
+                data.forEach(item => {
+                    commit('addToOrdering', { value: item });
+                });
+            } else {
+                console.log('Термін дії даних закінчився або даних немає.');
+            }
         },
 
         fetchCategoriesData(context, { category, queryParam }) {
