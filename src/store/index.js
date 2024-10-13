@@ -1,6 +1,35 @@
 import {createStore} from "vuex";
 import ApiService from "@/api-service";
 
+
+function setDataWithExpiry(key, value, ttl) {
+    const now = new Date();
+
+    const item = {
+        value: value,
+        expiry: now.getTime() + ttl,
+    };
+    localStorage.setItem(key, JSON.stringify(item));
+}
+
+function getDataWithExpiry(key) {
+    const itemStr = localStorage.getItem(key);
+
+    if (!itemStr) {
+        return null;
+    }
+
+    const item = JSON.parse(itemStr);
+    const now = new Date();
+
+    if (now.getTime() > item.expiry) {
+        localStorage.removeItem(key);
+        return null;
+    }
+
+    return item.value;
+}
+
 export default createStore({
     state: {
         orderingData: JSON.parse(localStorage.getItem('orderingData')) || [],
@@ -36,15 +65,33 @@ export default createStore({
     },
     actions: {
         addOrderingStuffs(context, payload) {
-            context.commit('addToOrdering', payload);
+            const existingData = JSON.parse(localStorage.getItem('orderStuff')) || [];
+            const exists = existingData.some(item => item.id === payload.value.id);
+            if (!exists) {
+                existingData.push(payload.value);
+                setDataWithExpiry('orderStuff', existingData, 20000);
+                context.commit('addToOrdering', payload);
+            }
         },
+
+        initializeOrderingData({ commit }) {
+            const data = getDataWithExpiry('orderStuff');
+
+            if (data) {
+                data.forEach(item => {
+                    commit('addToOrdering', { value: item });
+                });
+            } else {
+                console.log('Термін дії даних закінчився або даних немає.');
+            }
+        },
+
         fetchCategoriesData(context, { category, queryParam }) {
              ApiService.getCategories(queryParam)
                  .then((res) => {
                      const data = res.data[0]?.products.slice(0, 6);
                      context.commit('setDataForSpecificCategory', {category, value: data});
-
-            });
+                 });
         }
     },
     getters: {

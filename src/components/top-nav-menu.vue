@@ -73,9 +73,11 @@ export default {
   },
   methods: {
     goToOrderingPage() {
-      if(this.orderingDataLength > 0) {
-        this.$router.push('/ordering-page');
-      }
+      // if(this.orderingDataLength > 0) {
+      //   this.$router.push('/ordering-page');
+      // }
+
+      this.$router.push('/ordering-page');
     }
   },
   data() {

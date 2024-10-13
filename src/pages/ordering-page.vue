@@ -16,15 +16,15 @@ export default {
       orderingData: (state) => state.orderingData,
     }),
   },
+
   data() {
     return {
 
     }
   },
 
-  mounted() {
+mounted() {
     this.$store.commit('loadOrderingData');
-  }
 }
 </script>
 
