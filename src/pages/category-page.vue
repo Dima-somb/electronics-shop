@@ -52,12 +52,22 @@ export default {
             params.name = this.query.toLowerCase();
             response = await axios.get(`/categories`, { params });
           } else {
+            console.log('6')
             response = await axios.get(`/categories`);
           }
         }
 
         if (response.data.length > 0 && !this.btnSearTerm) {
-          this.cardsData = response.data[0].products || [];
+          console.log('1')
+          // this.cardsData = response.data[0].products || [];
+
+          response.data.forEach((category) => {
+            this.cardsData.push(...category.products);
+          });
+
+          if(this.prm !== 'brands') {
+            this.cardsData = this.shuffleArray(this.cardsData);
+          }
 
           if (searchSelected && this.selectedItem) {
             this.cardsData = this.cardsData.filter(product => product.id === +this.selectedItem);

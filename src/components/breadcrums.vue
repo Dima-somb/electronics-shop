@@ -1,5 +1,5 @@
 <template>
-  <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb" class="container my-3">
+  <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb" class="container mt-3 mb-5">
     <ol class="breadcrumb">
       <li v-for="(crumb, index) in breadcrumbs" :key="index" class="breadcrumb-item">
         <router-link v-if="index !== breadcrumbs.length - 1" :to="crumb.path">
@@ -17,7 +17,7 @@ export default {
   computed: {
     breadcrumbs() {
       const crumbs = [];
-      if (this.$route.path !== '/') {
+      if (this.$route.path !== '/' && (this.$route.query.name)) {
         crumbs.push({ name: 'Головна', path: '/' });
       }
       let currentCategory = '';
