@@ -18,13 +18,12 @@ export default {
   },
 
   data() {
-    return {
-
-    }
+    return {}
   },
 
-mounted() {
+  mounted() {
     this.$store.commit('loadOrderingData');
+  }
 }
 </script>
 
