@@ -22,9 +22,9 @@ export default {
 
     }
   },
-  created() {
-    this.$store.dispatch('initializeOrderingData');
-  }
+
+mounted() {
+    this.$store.commit('loadOrderingData');
 }
 </script>
 
