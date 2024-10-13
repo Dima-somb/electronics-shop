@@ -16,10 +16,14 @@ export default {
       orderingData: (state) => state.orderingData,
     }),
   },
+
   data() {
     return {
 
     }
+  },
+  created() {
+    this.$store.dispatch('initializeOrderingData');
   }
 }
 </script>

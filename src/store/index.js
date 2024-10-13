@@ -11,7 +11,10 @@ export default createStore({
 
     mutations: {
         addToOrdering(state, payload) {
-            state.orderingData.push(payload.value);
+            const exists = state.orderingData.some(item => item.id === payload.value.id);
+            if (!exists) {
+                state.orderingData.push(payload.value);
+            }
         },
         setDataForSpecificCategory(state, {category, value}) {
             if (category === 'laptops') {
@@ -25,15 +28,28 @@ export default createStore({
     },
     actions: {
         addOrderingStuffs(context, payload) {
-            context.commit('addToOrdering', payload);
+            const existingData = JSON.parse(localStorage.getItem('orderStuff')) || [];
+            const exists = existingData.some(item => item.id === payload.value.id);
+            if (!exists) {
+                existingData.push(payload.value);
+                localStorage.setItem('orderStuff', JSON.stringify(existingData));
+                context.commit('addToOrdering', payload);
+            }
         },
+
+        initializeOrderingData({ commit }) {
+            const existingData = JSON.parse(localStorage.getItem('orderStuff')) || [];
+            existingData.forEach(item => {
+                commit('addToOrdering', { value: item });
+            });
+        },
+
         fetchCategoriesData(context, { category, queryParam }) {
              ApiService.getCategories(queryParam)
                  .then((res) => {
                      const data = res.data[0]?.products.slice(0, 6);
                      context.commit('setDataForSpecificCategory', {category, value: data});
-
-            });
+                 });
         }
     },
     getters: {
