@@ -27,7 +27,7 @@
 
 
             <i><span class="text-danger">{{ orderingDataLength }}</span></i>
-            <i class="order-icon bi bi-cart me-2" @click="goToOrderingPage()">
+            <i class="order-icon bi bi-cart me-2" @click="openPopup()">
             </i>
             <a href="#" class="topnav__user"><i class="bi bi-person me-1"></i>Dmytro</a>
           </div>
@@ -58,13 +58,21 @@
         <button type="button" class="city-button"><i class="bi bi-geo-alt ms-1"></i>Kyiv</button>
       </div>
     </div>
+
+
+  <!-- Popup menu -->
+
+  <OrderingPopup @close="isModalVisible = false" :show="isModalVisible"></OrderingPopup>
+
 </template>
 
 <script>
 import {mapGetters} from "vuex";
+import OrderingPopup from "@/components/ordering-popup";
 
 export default {
   name: "top-nav-menu",
+  components: {OrderingPopup},
   computed: {
     counter() {
       return this.$store.state.counter
@@ -78,12 +86,19 @@ export default {
       // }
 
       this.$router.push('/ordering-page');
-    }
+    },
+
+    openPopup() {
+      this.isModalVisible = true;
+      document.body.classList.add('modal-open');
+    },
   },
+
   data() {
     return {
       visible: false,
-      menuOpen: false
+      menuOpen: false,
+      isModalVisible: false
     }
   }
 }
